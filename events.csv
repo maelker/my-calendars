@@ -1,0 +1,3 @@
+uid,status,category,emoji,title,start,end,timezone,location,url,notes
+example-concert-001,rejected,Concert,🎸,EXAMPLE – Artist @ Venue (delete this row),2026-12-05 20:00,2026-12-05 23:00,Europe/Paris,"Venue name, City",https://example.com/tickets,Example row. Status 'rejected' keeps it out of the calendar.
+example-sport-001,rejected,Sport,🏐,EXAMPLE – France vs Opponent (delete this row),2026-12-06 18:30,2026-12-06 20:30,Europe/Paris,"Arena name, City",https://example.com/match,Example row. Change status to 'approved' to publish.

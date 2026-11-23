@@ -24,7 +24,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install -r requirements.txt
       - run: python scripts/build_ics.py --out public
+      - name: Add the view/edit pages and their data
+        run: |
+          cp web/edit.html web/view.html public/
+          cp events.csv categories.csv public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

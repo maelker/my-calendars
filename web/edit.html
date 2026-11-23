@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>✏️ Modifier les événements</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f5f7;--card:#fff;--fg:#14171a;--mut:#667085;--line:#e1e4ea;--acc:#2f5bea;--accfg:#fff;--ok:#15803d;--warn:#b45309;--bad:#dc2626}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b22;--fg:#eceef2;--mut:#9aa3b2;--line:#2a2f3a;--acc:#7f9bff;--accfg:#0f1115;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:.6rem .8rem;padding-top:calc(.6rem + env(safe-area-inset-top))}
+.bar{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+h1{font-size:1.05rem;margin:0;flex:1;min-width:8rem}
+button,select,input,textarea{font:inherit;color:inherit}
+button{border:1px solid var(--line);background:var(--card);border-radius:.6rem;padding:.45rem .75rem;cursor:pointer}
+button.primary{background:var(--acc);color:var(--accfg);border-color:var(--acc);font-weight:600}
+button.danger{color:var(--bad)}
+button:disabled{opacity:.5;cursor:default}
+input,select,textarea{width:100%;border:1px solid var(--line);background:var(--bg);border-radius:.55rem;padding:.5rem .6rem}
+textarea{min-height:5.5rem;resize:vertical}
+.filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin-top:.5rem}
+.filters input{grid-column:1/-1}
+main{max-width:46rem;margin:0 auto;padding:.7rem .8rem 9rem}
+.count{color:var(--mut);font-size:.85rem;margin:.2rem 0 .6rem}
+.item{display:flex;gap:.7rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.65rem .8rem;margin-bottom:.5rem;cursor:pointer}
+.item:hover{border-color:var(--acc)}
+.emo{font-size:1.5rem;line-height:1.2;min-width:1.8rem;text-align:center}
+.item .t{font-weight:600;overflow-wrap:anywhere}
+.item .s{color:var(--mut);font-size:.88rem;overflow-wrap:anywhere}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.25rem}
+.tag{font-size:.72rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;color:var(--mut)}
+.tag.pending{color:var(--warn);border-color:var(--warn)}.tag.rejected{color:var(--mut);text-decoration:line-through}.tag.mod{color:var(--acc);border-color:var(--acc)}
+dialog{width:min(40rem,calc(100vw - 1rem));max-height:calc(100vh - 1rem);border:1px solid var(--line);border-radius:1rem;background:var(--card);color:var(--fg);padding:0}
+dialog::backdrop{background:#0008}
+.dlg{padding:1rem;display:grid;gap:.7rem}
+.dlg h2{margin:0;font-size:1.1rem}
+label{display:grid;gap:.2rem;font-size:.85rem;color:var(--mut)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}.row3{display:grid;grid-template-columns:5rem 1fr 1fr;gap:.6rem}
+.chk{display:flex;gap:.5rem;align-items:center;color:var(--fg)}.chk input{width:auto}
+.actions{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:flex-end;position:sticky;bottom:0;background:var(--card);padding-top:.6rem}
+.err{color:var(--bad);font-size:.88rem;white-space:pre-line}
+.hint{color:var(--mut);font-size:.8rem}
+.chips{display:flex;gap:.35rem;flex-wrap:wrap}.chip{border:1px solid var(--line);border-radius:99px;padding:.1rem .2rem .1rem .6rem;font-size:.85rem;color:var(--fg)}.chip button{border:0;padding:0 .4rem;background:none}
+.loc{position:relative}
+.sugg{position:absolute;left:0;right:0;top:100%;z-index:10;background:var(--card);border:1px solid var(--line);border-radius:.6rem;box-shadow:0 6px 20px #0004;overflow:hidden}
+.sugg div{padding:.5rem .7rem;cursor:pointer;font-size:.9rem;color:var(--fg)}.sugg div:hover{background:var(--bg)}
+.geo{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;font-size:.85rem;color:var(--mut)}
+a{color:var(--acc)}
+table{width:100%;border-collapse:collapse}td{padding:.2rem .2rem}td input{padding:.35rem .45rem}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(1rem + env(safe-area-inset-bottom));background:#111;color:#fff;border-radius:.7rem;padding:.6rem 1rem;z-index:50;max-width:90vw;display:none;white-space:pre-line}
+input.sel{width:1.15rem;height:1.15rem;margin-top:.2rem;flex:none;accent-color:var(--acc)}
+.bulk{position:fixed;left:.5rem;right:.5rem;bottom:calc(.5rem + env(safe-area-inset-bottom));z-index:8;max-width:46rem;margin:0 auto;display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;padding:.5rem .6rem;border:1px solid var(--acc);border-radius:.8rem;background:var(--card);box-shadow:0 6px 24px #0005}
+.bulk[hidden]{display:none}.bulk b{margin-right:auto}
+textarea.big{min-height:11rem;font:13px/1.4 ui-monospace,Menlo,Consolas,monospace;white-space:pre}
+.prev{max-height:10rem;overflow:auto;font-size:.82rem;color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <h1>✏️ Événements</h1>
+    <button id="bNew">＋ Nouveau</button>
+    <button id="bMulti">＋ Plusieurs</button>
+    <button id="bCats">🏷️</button>
+    <button id="bSet">⚙️</button>
+    <button id="bSave" class="primary" disabled>💾 Enregistrer</button>
+  </div>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Rechercher (titre, lieu, notes)…">
+    <select id="fCat"></select>
+    <select id="fSt"><option value="">Statuts</option><option value="approved">Publiés</option><option value="pending">À valider</option><option value="rejected">Rejetés</option></select>
+    <select id="fPer"><option value="up">À venir</option><option value="past">Passés</option><option value="all">Tout</option></select>
+  </div>
+</div>
+</header>
+<main>
+  <div class="count" id="count">Chargement…</div>
+  <p style="margin:0 0 .6rem"><button id="bAll">☑ Tout sélectionner (liste filtrée)</button></p>
+  <div id="list"></div>
+  <p style="text-align:center"><button id="more" hidden>Afficher plus</button></p>
+</main>
+<div class="bulk" id="bulk" hidden>
+    <b id="bulkN">0 sélectionné</b>
+    <button id="bNone">Aucun</button>
+    <button id="bBulkEdit" class="primary">✏️ Modifier</button>
+    <button id="bBulkDup">⧉ Dupliquer</button>
+    <button id="bBulkDel" class="danger">🗑 Supprimer</button>
+</div>
+<div id="toast"></div>
+
+<!-- Event editor -->
+<dialog id="dEdit"><form method="dialog" class="dlg" id="fEdit" onsubmit="return false">
+  <h2 id="eTitle">Événement</h2>
+  <label>Titre<input id="eName" required></label>
+  <div class="row2" style="grid-template-columns:5.5rem 1fr">
+    <label>Emoji<input id="eEmoji" maxlength="8" placeholder="🎸"></label>
+    <label>Catégorie<select id="eCat"></select></label>
+  </div>
+  <div class="row2">
+    <label>Statut<select id="eStatus"><option value="approved">Publié</option><option value="pending">À valider (non publié)</option><option value="rejected">Rejeté (non publié)</option></select></label>
+    <label class="chk" style="align-self:end"><input type="checkbox" id="eAll"> Toute la journée</label>
+  </div>
+  <div class="row2">
+    <label>Début<input type="date" id="eSd"></label>
+    <label>Heure<input type="time" id="eSt"></label>
+  </div>
+  <div class="row2">
+    <label>Fin (vide = durée par défaut)<input type="date" id="eEd"></label>
+    <label>Heure<input type="time" id="eEt"></label>
+  </div>
+  <label>Fuseau horaire<input id="eTz" list="tzs" placeholder="Europe/Paris"></label><datalist id="tzs"></datalist>
+  <div class="loc">
+    <label>Lieu (recherche d'adresse ou de salle)<input id="eLoc" autocomplete="off" placeholder="Ex. La Belle Électrique, Grenoble"></label>
+    <div class="sugg" id="sugg" hidden></div>
+  </div>
+  <div class="geo">
+    <span id="geoTxt">Aucun point GPS</span>
+    <button type="button" id="bGeoClr" hidden>✕ Effacer le GPS</button>
+    <a id="lG" target="_blank" rel="noopener" hidden>Google Maps ↗</a>
+    <a id="lA" target="_blank" rel="noopener" hidden>Plans (Apple) ↗</a>
+    <button type="button" id="bPaste">🔗 Coller un lien Google Maps / Plans</button>
+  </div>
+  <label>Lien (billetterie, page officielle)<input id="eUrl" type="url" placeholder="https://"></label>
+  <label>Notes<textarea id="eNotes"></textarea></label>
+  <details id="dRec"><summary>🔁 Répétition</summary>
+    <div class="dlg" style="padding:.6rem 0 0">
+      <div class="row3" style="grid-template-columns:1fr 1fr 1fr">
+        <label>Fréquence<select id="rFreq"><option value="">Aucune</option><option value="DAILY">Chaque jour</option><option value="WEEKLY">Chaque semaine</option><option value="MONTHLY">Chaque mois</option><option value="YEARLY">Chaque année</option></select></label>
+        <label>Jusqu'au<input type="date" id="rUntil"></label>
+        <label>ou nb de fois<input type="number" min="1" id="rCount"></label>
+      </div>
+      <label>Règle (RRULE, avancé)<input id="eRule" placeholder="FREQ=WEEKLY;UNTIL=20271231"></label>
+      <div class="hint">Sans date de fin ni nombre, la série est publiée 2 ans à l'avance. Début/fin ci-dessus = première occurrence.</div>
+      <label>Dates à ignorer
+        <div class="row2" style="grid-template-columns:1fr auto"><input type="date" id="eExD"><button type="button" id="bExAdd">Ajouter</button></div>
+      </label>
+      <div class="chips" id="exChips"></div>
+    </div>
+  </details>
+  <div class="hint" id="eUid"></div>
+  <div class="err" id="eErr"></div>
+  <div class="actions">
+    <button type="button" id="eDel" class="danger">Supprimer</button>
+    <button type="button" id="eDup">Dupliquer</button>
+    <button type="button" id="eCancel">Annuler</button>
+    <button type="button" id="eOk" class="primary">Appliquer</button>
+  </div>
+</form></dialog>
+
+<!-- Settings -->
+
+<dialog id="dBulk"><div class="dlg">
+  <h2 id="bkTitle">Modifier la sélection</h2>
+  <div class="hint">Seuls les champs remplis sont modifiés. « — inchangé — » ne touche à rien.</div>
+  <div class="row2"><label>Catégorie<select id="bkCat"></select></label>
+  <label>Statut<select id="bkStatus"><option value="">— inchangé —</option><option value="approved">Publié</option><option value="pending">À valider</option><option value="rejected">Rejeté</option></select></label></div>
+  <div class="row2"><label>Emoji<input id="bkEmoji" maxlength="8" placeholder="inchangé"></label>
+  <label>Fuseau horaire<input id="bkTz" list="tzs" placeholder="inchangé"></label></div>
+  <label>Lieu (efface aussi le point GPS)<input id="bkLoc" placeholder="inchangé"></label>
+  <label>Lien<input id="bkUrl" placeholder="inchangé"></label>
+  <div class="row2"><label>Notes<select id="bkNMode"><option value="">— inchangé —</option><option value="replace">Remplacer par…</option><option value="append">Ajouter à la fin…</option><option value="clear">Vider les notes</option></select></label>
+  <label>Texte<textarea id="bkNotes" style="min-height:3rem"></textarea></label></div>
+  <div class="row3" style="grid-template-columns:1fr 1fr 1fr">
+    <label>Décaler (jours)<input id="bkDays" type="number" step="1" placeholder="0"></label>
+    <label>Décaler (minutes)<input id="bkMin" type="number" step="5" placeholder="0"></label>
+    <label>Durée (minutes)<input id="bkDur" type="number" min="1" placeholder="inchangé"></label></div>
+  <div class="hint">Décalage : début, fin et exceptions de répétition sont décalés. Durée : fixe la fin = début + durée (événements avec heure).</div>
+  <div class="err" id="bkErr"></div>
+  <div class="actions"><button type="button" id="bkCancel">Annuler</button><button type="button" id="bkOk" class="primary">Appliquer</button></div>
+</div></dialog>
+
+<dialog id="dMulti"><div class="dlg">
+  <h2>Ajouter plusieurs événements</h2>
+  <div class="hint">Une ligne = un événement. Colle depuis Excel/Sheets (tabulations) ou écris-les, séparés par <b>;</b> <b>|</b> ou tabulation :<br>
+  <code>date heure ; titre ; lieu ; fin ; lien</code> — ex. <code>2026-12-05 20:00 ; Sniper ; La Belle Électrique, Grenoble</code><br>
+  Dates : <code>2026-12-05 20:00</code>, <code>05/12/2026 20:00</code> ou <code>2026-12-05</code> (journée entière).
+  Ou colle un tableau <b>avec en-tête</b> (title, start, end, category, location, url, notes…).</div>
+  <textarea class="big" id="mText" placeholder="2026-12-05 20:00 ; Sniper ; La Belle Électrique, Grenoble&#10;2026-12-12 ; Marché de Noël ; Annecy"></textarea>
+  <div class="row3" style="grid-template-columns:1fr 1fr 1fr 5rem">
+    <label>Catégorie par défaut<select id="mCat"></select></label>
+    <label>Statut<select id="mStatus"><option value="approved">Publié</option><option value="pending" selected>À valider</option></select></label>
+    <label>Fuseau<input id="mTz" value="Europe/Paris" list="tzs"></label>
+    <label>Emoji<input id="mEmoji" maxlength="8"></label></div>
+  <div class="prev" id="mPrev"></div>
+  <div class="actions"><button type="button" id="mCancel">Annuler</button><button type="button" id="mOk" class="primary" disabled>Ajouter</button></div>
+</div></dialog>
+
+<dialog id="dSet"><div class="dlg">
+  <h2>⚙️ Réglages GitHub</h2>
+  <div class="row2"><label>Compte<input id="sOwner"></label><label>Dépôt<input id="sRepo"></label></div>
+  <div class="row2"><label>Branche<input id="sBranch"></label>
+  <label>Enregistrer<select id="sMode"><option value="direct">Directement sur la branche</option><option value="pr">Via une pull request</option></select></label></div>
+  <label>Jeton d'accès (token)<input id="sToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+  <div class="hint">Crée un jeton « fine-grained » limité à ce dépôt (GitHub → Settings → Developer settings → Personal access tokens), avec les droits <b>Contents : Read and write</b> (et <b>Pull requests : Read and write</b> pour le mode pull request). Il reste dans ce navigateur uniquement. Sans jeton, tu peux modifier et télécharger le CSV.</div>
+  <div class="actions"><button id="sCancel" type="button">Fermer</button><button id="sOk" class="primary" type="button">Enregistrer et recharger</button></div>
+</div></dialog>
+
+<!-- Categories -->
+<dialog id="dCats"><div class="dlg">
+  <h2>🏷️ Catégories</h2>
+  <div class="hint">Chaque catégorie produit un calendrier <code>&lt;nom-court&gt;.ics</code>. Une catégorie utilisée ne peut pas être supprimée.</div>
+  <table id="cTable"></table>
+  <div class="err" id="cErr"></div>
+  <div class="actions"><button id="cAdd" type="button">＋ Ajouter</button><button id="cCancel" type="button">Annuler</button><button id="cOk" class="primary" type="button">Appliquer</button></div>
+</div></dialog>
+
+<!-- Save -->
+<dialog id="dSave"><div class="dlg">
+  <h2>💾 Enregistrer</h2>
+  <div id="svSum"></div>
+  <label>Message<input id="svMsg"></label>
+  <label>Mode<select id="svMode"><option value="direct">Directement sur la branche (publie après le build)</option><option value="pr">Créer une pull request</option></select></label>
+  <div class="err" id="svErr"></div>
+  <div class="actions"><button id="svDl" type="button">⬇️ Télécharger le CSV</button><button id="svCancel" type="button">Annuler</button><button id="svOk" class="primary" type="button">Envoyer sur GitHub</button></div>
+</div></dialog>
+
+<script>
+"use strict";
+const REQUIRED=["uid","status","category","emoji","title","start","end","timezone","location","url","notes","recurrence","exceptions","geo"];
+const CAT_COLS=["category","slug","calendar_name"];
+const DEFAULT_CATS=[["Concert","concerts","🎸 Concerts"],["Festival","festivals","🎪 Festivals"],["Sport","sports","🏅 Sport"],["Esport","esports","🎮 Esports"],["Stream","streams","📺 Streams"],["Personal","personal","🏠 Personal"],["Other","other","📌 Other"]];
+const STATUS_FR={approved:"Publié",pending:"À valider",rejected:"Rejeté"};
+const $=s=>document.querySelector(s);
+function h(tag,attrs={},...kids){const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(k==="class")e.className=v;else if(k.startsWith("on"))e.addEventListener(k.slice(2),v);else if(v!==false&&v!=null)e.setAttribute(k,v===true?"":v)}for(const c of kids.flat())if(c!=null)e.append(c.nodeType?c:document.createTextNode(c));return e}
+function toast(msg,ms=3500){const t=$("#toast");t.textContent=msg;t.style.display="block";clearTimeout(toast.t);toast.t=setTimeout(()=>t.style.display="none",ms)}
+
+/* ---------- CSV ---------- */
+function parseCSV(text){const rows=[];let row=[],f="",q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){f+='"';i++}else q=false}else f+=c}else if(c==='"')q=true;else if(c===","){row.push(f);f=""}else if(c==="\n"||c==="\r"){if(c==="\r"&&text[i+1]==="\n")i++;row.push(f);rows.push(row);row=[];f=""}else f+=c}if(f!==""||row.length){row.push(f);rows.push(row)}return rows.filter(r=>!(r.length===1&&r[0]===""))}
+function serializeCSV(rows,eol){const q=v=>/[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;return rows.map(r=>r.map(q).join(",")).join(eol)+eol}
+function b64ToBytes(b){const s=atob(b.replace(/\s/g,""));const u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u}
+function decodeFile(bytes){const bom=bytes[0]===0xEF&&bytes[1]===0xBB&&bytes[2]===0xBF;const text=new TextDecoder("utf-8").decode(bom?bytes.slice(3):bytes);return{text,bom,eol:text.includes("\r\n")?"\r\n":"\n"}}
+function encodeB64(text,bom){const b=new TextEncoder().encode((bom?"\uFEFF":"")+text);let s="";for(let i=0;i<b.length;i+=0x8000)s+=String.fromCharCode.apply(null,b.subarray(i,i+0x8000));return btoa(s)}
+
+/* ---------- Settings ---------- */
+const LS="evedit.settings";
+function defaultSettings(){const s={owner:"",repo:"",branch:"main",token:"",mode:"direct"};const m=location.hostname.match(/^(.+)\.github\.io$/);if(m){s.owner=m[1];s.repo=location.pathname.split("/").filter(Boolean)[0]||""}return s}
+let cfg=Object.assign(defaultSettings(),JSON.parse(localStorage.getItem(LS)||"{}"));
+const saveCfg=()=>localStorage.setItem(LS,JSON.stringify(cfg));
+
+/* ---------- GitHub ---------- */
+async function gh(path,opts={}){const r=await fetch("https://api.github.com"+path,{...opts,headers:{Accept:"application/vnd.github+json",...(opts.body?{"Content-Type":"application/json"}:{}),...(cfg.token?{Authorization:"Bearer "+cfg.token}:{}),...(opts.headers||{})}});if(!r.ok){let t="";try{t=(await r.json()).message}catch{}const e=new Error(`GitHub ${r.status}: ${t}`);e.status=r.status;throw e}return r}
+const repoPath=()=>`/repos/${cfg.owner}/${cfg.repo}`;
+async function ghGetFile(path,ref){const url=`${repoPath()}/contents/${path}?ref=${encodeURIComponent(ref||cfg.branch)}`;const j=await(await gh(url)).json();let bytes;if(j.content&&j.encoding==="base64")bytes=b64ToBytes(j.content);else{const raw=await gh(url,{headers:{Accept:"application/vnd.github.raw+json"}});bytes=new Uint8Array(await raw.arrayBuffer())}return{...decodeFile(bytes),sha:j.sha}}
+async function ghPutFile(path,text,bom,message,branch,sha){const body={message,content:encodeB64(text,bom),branch};if(sha)body.sha=sha;const j=await(await gh(`${repoPath()}/contents/${path}`,{method:"PUT",body:JSON.stringify(body)})).json();return j.content.sha}
+
+/* ---------- State ---------- */
+let cols=[],rows=[],orig=new Map(),fileMeta={bom:true,eol:"\r\n",sha:null};
+let cats=[],catsOrigText="",catsMeta={bom:true,eol:"\r\n",sha:null,exists:false};
+const sel=new Set();let limit=100,editingRow=null,editGeo="",editEx=[],catRename=new Map();
+const rowStr=r=>cols.map(c=>r[c]??"").join("\u0001");
+const catKey=()=>JSON.stringify(cats);
+
+function ingest(text){const table=parseCSV(text);const header=table[0]||REQUIRED;cols=[...header];for(const c of REQUIRED)if(!cols.includes(c))cols.push(c);
+  rows=table.slice(1).map(a=>{const o={};cols.forEach((c,i)=>o[c]=a[i]??"");return o});orig=new Map(rows.map(r=>[r.uid,rowStr(r)]))}
+function ingestCats(text){if(text==null){cats=DEFAULT_CATS.map(([category,slug,calendar_name])=>({category,slug,calendar_name}));catsOrigText=catKey();return}
+  const t=parseCSV(text);const hd=t[0]||CAT_COLS;cats=t.slice(1).map(a=>{const o={};hd.forEach((c,i)=>o[c]=a[i]??"");return{category:o.category||"",slug:o.slug||"",calendar_name:o.calendar_name||""}}).filter(c=>c.category);catsOrigText=catKey()}
+
+async function loadAll(){
+  $("#count").textContent="Chargement…";
+  let text=null,ctext=null;
+  if(cfg.token&&cfg.owner&&cfg.repo){
+    try{const f=await ghGetFile("events.csv");text=f.text;fileMeta={bom:f.bom,eol:f.eol,sha:f.sha}}catch(e){toast("Lecture GitHub impossible, version publiée utilisée.\n"+e.message,6000)}
+    try{const f=await ghGetFile("categories.csv");ctext=f.text;catsMeta={bom:f.bom,eol:f.eol,sha:f.sha,exists:true}}catch(e){catsMeta={bom:true,eol:"\r\n",sha:null,exists:false}}
+  }
+  if(text==null){
+    try{const r=await fetch("events.csv?"+Date.now());if(!r.ok)throw new Error(r.status);const d=decodeFile(new Uint8Array(await r.arrayBuffer()));text=d.text;fileMeta={bom:d.bom,eol:d.eol,sha:null}}catch(e){$("#count").textContent="Impossible de charger events.csv ("+e.message+"). Ouvre les réglages.";return}
+    try{const r=await fetch("categories.csv?"+Date.now());if(r.ok){const d=decodeFile(new Uint8Array(await r.arrayBuffer()));ctext=d.text;catsMeta={bom:d.bom,eol:d.eol,sha:null,exists:true}}}catch{}
+  }
+  ingest(text);ingestCats(ctext);fillCatSelects();render();refreshSave()}
+
+/* ---------- Diff ---------- */
+function changes(){const cur=new Set(),added=[],modified=[];for(const r of rows){cur.add(r.uid);if(!orig.has(r.uid))added.push(r);else if(orig.get(r.uid)!==rowStr(r))modified.push(r)}
+  const deleted=[...orig.keys()].filter(u=>!cur.has(u));return{added,modified,deleted,cats:catKey()!==catsOrigText}}
+function refreshSave(){const c=changes(),n=c.added.length+c.modified.length+c.deleted.length+(c.cats?1:0);const b=$("#bSave");b.disabled=!n;b.textContent=n?`💾 Enregistrer (${n})`:"💾 Enregistrer"}
+window.addEventListener("beforeunload",e=>{const c=changes();if(c.added.length+c.modified.length+c.deleted.length||c.cats){e.preventDefault();e.returnValue=""}});
+
+/* ---------- Helpers ---------- */
+const slug=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const validTZ=tz=>{try{new Intl.DateTimeFormat("fr",{timeZone:tz});return true}catch{return false}};
+const splitDT=s=>s?(s.length===10?{d:s,t:""}:{d:s.slice(0,10),t:s.slice(11,16)}):{d:"",t:""};
+const todayISO=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+function fmtDate(r){const a=splitDT(r.start),b=splitDT(r.end);if(!a.d)return"(sans date)";
+  const f=(d,o)=>new Date(d+"T12:00:00").toLocaleDateString("fr-FR",o);const o={weekday:"short",day:"numeric",month:"short",year:"numeric"};
+  let s=f(a.d,o)+(a.t?" · "+a.t:"");if(b.d&&b.d!==a.d)s+=" → "+f(b.d,{day:"numeric",month:"short"})+(b.t?" "+b.t:"");else if(b.t&&b.t!==a.t)s+="–"+b.t;return s}
+function endDay(r){return (r.end||r.start).slice(0,10)}
+const gmapsLink=(loc,geo)=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(geo||loc);
+const amapsLink=(loc,geo)=>"https://maps.apple.com/?q="+encodeURIComponent(loc||"Lieu")+(geo?"&ll="+geo:"");
+
+/* ---------- List ---------- */
+function fillCatSelects(){const sel=$("#fCat"),v=sel.value;sel.replaceChildren(h("option",{value:""},"Catégories"),...cats.map(c=>h("option",{value:c.category},c.category)));sel.value=cats.some(c=>c.category===v)?v:"";
+  const e=$("#eCat");e.replaceChildren(...cats.map(c=>h("option",{value:c.category},c.category)))}
+function pruneSel(){for(const r of [...sel])if(!rows.includes(r))sel.delete(r)}
+function filtered(){const q=$("#q").value.trim().toLowerCase(),fc=$("#fCat").value,fs=$("#fSt").value,per=$("#fPer").value,t=todayISO();
+  let a=rows.filter(r=>(!fc||r.category===fc)&&(!fs||r.status===fs)&&(per==="all"||(per==="up"?endDay(r)>=t:endDay(r)<t))&&(!q||(r.title+" "+r.location+" "+r.notes+" "+r.category).toLowerCase().includes(q)));
+  a.sort((x,y)=>x.start<y.start?-1:x.start>y.start?1:0);if(per==="past")a.reverse();return a}
+function render(){const a=filtered(),list=$("#list");list.replaceChildren();const mod=new Set([...changes().modified,...changes().added]);
+  for(const r of a.slice(0,limit)){
+    const tags=h("div",{class:"tags"},h("span",{class:"tag"},r.category),r.status!=="approved"?h("span",{class:"tag "+r.status},STATUS_FR[r.status]||r.status):null,r.recurrence?h("span",{class:"tag"},"🔁 série"):null,mod.has(r)?h("span",{class:"tag mod"},"modifié"):null);
+    list.append(h("div",{class:"item",onclick:()=>openEditor(r)},h("input",{type:"checkbox",class:"sel",checked:sel.has(r),onclick:ev=>{ev.stopPropagation();ev.target.checked?sel.add(r):sel.delete(r);updateBulk()}}),h("div",{class:"emo"},r.emoji||"•"),h("div",{},h("div",{class:"t"},r.title||"(sans titre)"),h("div",{class:"s"},fmtDate(r)+(r.location?" · "+r.location:"")),tags)))}
+  $("#count").textContent=`${a.length} événement${a.length>1?"s":""} affiché${a.length>1?"s":""} sur ${rows.length}`;
+  $("#more").hidden=a.length<=limit;updateBulk()}
+for(const id of["#q","#fCat","#fSt","#fPer"])$(id).addEventListener("input",()=>{limit=100;render()});
+$("#more").onclick=()=>{limit+=200;render()};
+
+/* ---------- Editor ---------- */
+function ruleGet(rule,key){const m=rule.match(new RegExp("(?:^|;)"+key+"=([^;]*)","i"));return m?m[1]:""}
+function ruleSet(rule,key,val){const p=rule.split(";").filter(Boolean).filter(x=>!x.toUpperCase().startsWith(key+"="));if(val)p.push(key+"="+val);return p.join(";")}
+function syncRuleUI(){const r=$("#eRule").value;$("#rFreq").value=["DAILY","WEEKLY","MONTHLY","YEARLY"].includes(ruleGet(r,"FREQ").toUpperCase())?ruleGet(r,"FREQ").toUpperCase():"";
+  const u=ruleGet(r,"UNTIL").slice(0,8);$("#rUntil").value=u.length===8?`${u.slice(0,4)}-${u.slice(4,6)}-${u.slice(6,8)}`:"";$("#rCount").value=ruleGet(r,"COUNT")}
+$("#rFreq").onchange=e=>{let r=$("#eRule").value;if(!e.target.value)r="";else r=ruleSet(r,"FREQ",e.target.value);$("#eRule").value=r;syncRuleUI()};
+$("#rUntil").onchange=e=>{let r=ruleSet($("#eRule").value,"UNTIL",e.target.value.replace(/-/g,""));if(e.target.value)r=ruleSet(r,"COUNT","");$("#eRule").value=r;syncRuleUI()};
+$("#rCount").onchange=e=>{let r=ruleSet($("#eRule").value,"COUNT",e.target.value);if(e.target.value)r=ruleSet(r,"UNTIL","");$("#eRule").value=r;syncRuleUI()};
+$("#eRule").oninput=syncRuleUI;
+function renderChips(){$("#exChips").replaceChildren(...editEx.map(d=>h("span",{class:"chip"},d," ",h("button",{type:"button",onclick:()=>{editEx=editEx.filter(x=>x!==d);renderChips()}},"✕"))))}
+$("#bExAdd").onclick=()=>{const v=$("#eExD").value;if(v&&!editEx.includes(v)){editEx.push(v);editEx.sort();renderChips()}$("#eExD").value=""};
+function updateGeoUI(){const g=editGeo,loc=$("#eLoc").value.trim();$("#geoTxt").textContent=g?"📍 "+g:"Aucun point GPS";$("#bGeoClr").hidden=!g;
+  const show=!!(loc||g);const lg=$("#lG"),la=$("#lA");lg.hidden=la.hidden=!show;if(show){lg.href=gmapsLink(loc,g);la.href=amapsLink(loc,g)}}
+$("#bGeoClr").onclick=()=>{editGeo="";updateGeoUI()};
+$("#eLoc").addEventListener("input",()=>{updateGeoUI();suggestDebounced()});
+$("#eAll").onchange=()=>{$("#eSt").disabled=$("#eEt").disabled=$("#eAll").checked};
+
+/* location autocomplete (OpenStreetMap / Photon, no key) */
+let suggT=0,suggSeq=0;
+function suggestDebounced(){clearTimeout(suggT);const q=$("#eLoc").value.trim();if(q.length<3){$("#sugg").hidden=true;return}suggT=setTimeout(()=>suggest(q),350)}
+function photonLabel(p){const street=[p.housenumber,p.street].filter(Boolean).join(" "),city=[p.postcode,p.city||p.town||p.village||p.locality||p.county].filter(Boolean).join(" ");const out=[];
+  for(const x of[p.name,street,city,p.country].filter(Boolean)){const l=x.toLowerCase();if(!out.some(y=>y.toLowerCase().includes(l)))out.push(x)}return out.join(", ")}
+async function suggest(q){const my=++suggSeq;try{const r=await fetch("https://photon.komoot.io/api/?limit=6&lang=fr&q="+encodeURIComponent(q));const j=await r.json();if(my!==suggSeq)return;
+  const box=$("#sugg");box.replaceChildren(...j.features.map(f=>{const lab=photonLabel(f.properties),lat=f.geometry.coordinates[1].toFixed(6),lon=f.geometry.coordinates[0].toFixed(6);
+    return h("div",{onclick:()=>{$("#eLoc").value=lab;editGeo=lat+","+lon;box.hidden=true;updateGeoUI()}},lab)}));
+  if(!j.features.length)box.replaceChildren(h("div",{},"Aucun résultat"));box.hidden=false}catch{$("#sugg").hidden=true}}
+document.addEventListener("click",e=>{if(!e.target.closest(".loc"))$("#sugg").hidden=true});
+
+function parseMapsLink(u){let s;try{s=decodeURIComponent(u.trim())}catch{s=u.trim()}if(!/^https?:\/\//i.test(s))return null;
+  if(/(maps\.app\.goo\.gl|goo\.gl\/maps|maps\.apple\.com\/p\/)/i.test(s))return{short:true};
+  let lat,lon,name="";let m=s.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/)||s.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)||s.match(/[?&](?:ll|q|query|destination|sll|center)=(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
+  if(m){lat=m[1];lon=m[2]}
+  const pl=s.match(/\/maps\/place\/([^/@?]+)/i);if(pl)name=pl[1].replace(/\+/g," ");
+  const q=s.match(/[?&](?:q|query)=([^&]+)/i);if(!name&&q&&!/^-?\d+\.\d+,/.test(q[1]))name=q[1].replace(/\+/g," ");
+  const ad=s.match(/[?&]address=([^&]+)/i);if(ad)name=(name?name+", ":"")+ad[1].replace(/\+/g," ");
+  const nm=s.match(/[?&]name=([^&]+)/i);if(nm&&!ad)name=nm[1].replace(/\+/g," ");
+  if(!lat&&!name)return null;return{lat,lon,name}}
+$("#bPaste").onclick=()=>{const u=prompt("Colle ici le lien Google Maps ou Plans (Apple) du lieu :");if(!u)return;const r=parseMapsLink(u);
+  if(!r)return toast("Lien non reconnu.");if(r.short)return toast("Les liens courts (maps.app.goo.gl, maps.apple.com/p/…) ne peuvent pas être lus ici.\nOuvre le lien, copie l'adresse complète dans la barre du navigateur, ou cherche le lieu dans le champ ci-dessus.",7000);
+  if(r.lat)editGeo=(+r.lat).toFixed(6)+","+(+r.lon).toFixed(6);if(r.name)$("#eLoc").value=r.name;updateGeoUI();toast(r.lat?"Lieu et point GPS importés.":"Nom du lieu importé (sans GPS).")};
+
+function openEditor(r,fresh){editingRow=fresh?null:r;const d=r||{};$("#eTitle").textContent=fresh?"Nouvel événement":"Modifier l'événement";
+  $("#eEmoji").value=d.emoji||"";$("#eName").value=d.title||"";$("#eCat").value=cats.some(c=>c.category===d.category)?d.category:(cats[0]?.category||"");
+  $("#eStatus").value=d.status||"approved";const s=splitDT(d.start),e=splitDT(d.end);$("#eAll").checked=!!d.start&&d.start.length===10;
+  $("#eSd").value=s.d;$("#eSt").value=s.t;$("#eEd").value=e.d;$("#eEt").value=e.t;$("#eSt").disabled=$("#eEt").disabled=$("#eAll").checked;
+  $("#eTz").value=d.timezone||"Europe/Paris";$("#eLoc").value=d.location||"";editGeo=d.geo||"";$("#eUrl").value=d.url||"";$("#eNotes").value=d.notes||"";
+  $("#eRule").value=d.recurrence||"";editEx=(d.exceptions||"").split(";").map(x=>x.trim()).filter(Boolean);renderChips();syncRuleUI();$("#dRec").open=!!d.recurrence;
+  $("#eUid").textContent=editingRow?"Identifiant : "+d.uid:"Identifiant créé automatiquement à l'enregistrement.";$("#eErr").textContent="";$("#sugg").hidden=true;updateGeoUI();
+  $("#eDel").hidden=$("#eDup").hidden=!editingRow;$("#dEdit").showModal()}
+function readForm(){const err=[],o={};o.title=$("#eName").value.trim();o.emoji=$("#eEmoji").value.trim();o.category=$("#eCat").value;o.status=$("#eStatus").value;
+  const all=$("#eAll").checked,sd=$("#eSd").value,st=$("#eSt").value,ed=$("#eEd").value,et=$("#eEt").value;
+  if(!o.title)err.push("Le titre est obligatoire.");if(!cats.some(c=>c.category===o.category))err.push("Choisis une catégorie.");if(!sd)err.push("La date de début est obligatoire.");
+  if(all){o.start=sd;o.end=ed||""}else{if(!st)err.push("L'heure de début est obligatoire (ou coche « Toute la journée »).");o.start=sd&&st?`${sd} ${st}`:"";
+    if(ed&&!et||!ed&&et)err.push("Pour la fin, renseigne la date ET l'heure, ou laisse les deux vides.");o.end=ed&&et?`${ed} ${et}`:""}
+  if(o.start&&o.end&&(all?o.end<o.start:o.end<=o.start))err.push("La fin doit être après le début.");
+  o.timezone=$("#eTz").value.trim()||"Europe/Paris";if(!validTZ(o.timezone))err.push("Fuseau horaire inconnu : "+o.timezone);
+  o.location=$("#eLoc").value.trim();o.geo=editGeo;o.url=$("#eUrl").value.trim();o.notes=$("#eNotes").value.trim();
+  o.recurrence=$("#eRule").value.trim().replace(/^RRULE:/i,"");o.exceptions=editEx.join(";");
+  if(o.recurrence&&!/FREQ=/i.test(o.recurrence))err.push("La règle de répétition doit contenir FREQ=… (ex. FREQ=WEEKLY).");
+  return{o,err}}
+function newUid(o){const base=`${slug(o.category)}-${slug(o.title).slice(0,40)}-${o.start.replace(/\D/g,"").slice(0,8)}`;let u=base,i=2;const used=new Set(rows.map(r=>r.uid));while(used.has(u))u=base+"-"+i++;return u}
+$("#eOk").onclick=()=>{const{o,err}=readForm();if(err.length){$("#eErr").textContent=err.join("\n");return}
+  if(editingRow)Object.assign(editingRow,o);else{const r={};cols.forEach(c=>r[c]="");Object.assign(r,o);r.uid=newUid(o);
+    const i=rows.findIndex(x=>x.start>r.start);if(i<0)rows.push(r);else rows.splice(i,0,r)}
+  $("#dEdit").close();render();refreshSave()};
+$("#eCancel").onclick=()=>$("#dEdit").close();
+$("#eDel").onclick=()=>{if(!confirm("Supprimer cet événement ?"))return;rows=rows.filter(r=>r!==editingRow);$("#dEdit").close();render();refreshSave()};
+$("#eDup").onclick=()=>{const {o}=readForm();$("#dEdit").close();openEditor(o,true)};
+$("#bNew").onclick=()=>openEditor({category:$("#fCat").value||cats[0]?.category,status:"approved",timezone:"Europe/Paris",start:todayISO()+" 20:00"},true);
+{const z=(Intl.supportedValuesOf?Intl.supportedValuesOf("timeZone"):[]);$("#tzs").replaceChildren(...["Europe/Paris",...z.filter(x=>x!=="Europe/Paris")].map(x=>h("option",{value:x})))}
+
+/* ---------- Categories ---------- */
+let catDraft=[];
+function drawCats(){const used=n=>rows.filter(r=>r.category===n).length;const t=$("#cTable");t.replaceChildren(h("tr",{},h("td",{},"Nom"),h("td",{},"Nom court (fichier)"),h("td",{},"Titre du calendrier"),h("td",{})),
+  ...catDraft.map((c,i)=>h("tr",{},h("td",{},h("input",{value:c.category,oninput:e=>c.category=e.target.value})),h("td",{},h("input",{value:c.slug,oninput:e=>c.slug=e.target.value})),h("td",{},h("input",{value:c.calendar_name,oninput:e=>c.calendar_name=e.target.value})),
+    h("td",{},h("button",{type:"button",disabled:!!used(c._orig),title:used(c._orig)?"Catégorie utilisée":"Supprimer",onclick:()=>{catDraft.splice(i,1);drawCats()}},"🗑")))))}
+$("#bCats").onclick=()=>{catDraft=cats.map(c=>({...c,_orig:c.category}));$("#cErr").textContent="";drawCats();$("#dCats").showModal()};
+$("#cAdd").onclick=()=>{catDraft.push({category:"",slug:"",calendar_name:"",_orig:""});drawCats()};
+$("#cCancel").onclick=()=>$("#dCats").close();
+$("#cOk").onclick=()=>{const err=[],names=new Set(),slugs=new Set();for(const c of catDraft){c.category=c.category.trim();c.slug=slug(c.slug||c.category);c.calendar_name=c.calendar_name.trim()||c.category;
+    if(!c.category)err.push("Une catégorie n'a pas de nom.");if(names.has(c.category))err.push("Nom en double : "+c.category);if(slugs.has(c.slug))err.push("Nom court en double : "+c.slug);names.add(c.category);slugs.add(c.slug)}
+  if(err.length){$("#cErr").textContent=err.join("\n");return}
+  for(const c of catDraft)if(c._orig&&c._orig!==c.category)for(const r of rows)if(r.category===c._orig)r.category=c.category;
+  cats=catDraft.map(({category,slug,calendar_name})=>({category,slug,calendar_name}));$("#dCats").close();fillCatSelects();render();refreshSave()};
+
+/* ---------- Settings dialog ---------- */
+$("#bSet").onclick=()=>{$("#sOwner").value=cfg.owner;$("#sRepo").value=cfg.repo;$("#sBranch").value=cfg.branch;$("#sMode").value=cfg.mode;$("#sToken").value=cfg.token;$("#dSet").showModal()};
+$("#sCancel").onclick=()=>$("#dSet").close();
+$("#sOk").onclick=()=>{cfg={owner:$("#sOwner").value.trim(),repo:$("#sRepo").value.trim(),branch:$("#sBranch").value.trim()||"main",mode:$("#sMode").value,token:$("#sToken").value.trim()};saveCfg();$("#dSet").close();loadAll()};
+
+/* ---------- Save ---------- */
+function csvOut(){return serializeCSV([cols,...rows.map(r=>cols.map(c=>r[c]??""))],fileMeta.eol)}
+function catsOut(){return serializeCSV([CAT_COLS,...cats.map(c=>CAT_COLS.map(k=>c[k]))],catsMeta.eol)}
+$("#bSave").onclick=()=>{const c=changes();const L=(n,t)=>n?h("div",{},`${t} : ${n}`):null;
+  $("#svSum").replaceChildren(...[L(c.added.length,"➕ Ajoutés"),L(c.modified.length,"✏️ Modifiés"),L(c.deleted.length,"🗑 Supprimés"),c.cats?h("div",{},"🏷️ Catégories modifiées"):null].filter(Boolean));
+  $("#svMsg").value=`Mise à jour des événements (+${c.added.length} ~${c.modified.length} −${c.deleted.length})${c.cats?" + catégories":""}`;$("#svMode").value=cfg.mode;
+  $("#svErr").textContent=cfg.token?"":"Pas de jeton : renseigne-le dans ⚙️ pour envoyer sur GitHub. Tu peux télécharger le CSV.";$("#svOk").disabled=!cfg.token;$("#dSave").showModal()};
+$("#svCancel").onclick=()=>$("#dSave").close();
+$("#svDl").onclick=()=>{const blob=new Blob([(fileMeta.bom?"\uFEFF":"")+csvOut()],{type:"text/csv;charset=utf-8"});const a=h("a",{href:URL.createObjectURL(blob),download:"events.csv"});document.body.append(a);a.click();a.remove();
+  const c=changes();if(c.cats){const b2=new Blob([(catsMeta.bom?"\uFEFF":"")+catsOut()],{type:"text/csv;charset=utf-8"});const a2=h("a",{href:URL.createObjectURL(b2),download:"categories.csv"});document.body.append(a2);a2.click();a2.remove()}};
+$("#svOk").onclick=async()=>{const btn=$("#svOk");btn.disabled=true;$("#svErr").textContent="";const msg=$("#svMsg").value.trim()||"Mise à jour des événements",mode=$("#svMode").value,c=changes();
+  try{
+    let branch=cfg.branch,prBranch=null;
+    if(mode==="pr"){const ref=await(await gh(`${repoPath()}/git/ref/heads/${encodeURIComponent(cfg.branch)}`)).json();const d=new Date(),p=n=>String(n).padStart(2,"0");
+      prBranch=`edit-${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+      await gh(`${repoPath()}/git/refs`,{method:"POST",body:JSON.stringify({ref:"refs/heads/"+prBranch,sha:ref.object.sha})});branch=prBranch}
+    const files=[];if(c.added.length+c.modified.length+c.deleted.length)files.push({path:"events.csv",text:csvOut(),meta:fileMeta,kind:"events"});if(c.cats)files.push({path:"categories.csv",text:catsOut(),meta:catsMeta,kind:"cats"});
+    for(const f of files){let latest=null;try{latest=(await ghGetFile(f.path,branch)).sha}catch(e){if(e.status!==404)throw e}
+      if(mode==="direct"&&latest&&f.meta.sha&&latest!==f.meta.sha&&!confirm(`${f.path} a été modifié sur GitHub depuis ton chargement. Écraser quand même ?`)){btn.disabled=false;return}
+      const sha=await ghPutFile(f.path,f.text,f.meta.bom,msg,branch,latest);if(mode==="direct")f.meta.sha=sha;else if(f.kind==="events")fileMeta.sha=latest;}
+    let link="";
+    if(mode==="pr"){const pr=await(await gh(`${repoPath()}/pulls`,{method:"POST",body:JSON.stringify({title:msg,head:prBranch,base:cfg.branch,body:"Modifications faites depuis la page d'édition."})})).json();link=pr.html_url}
+    orig=new Map(rows.map(r=>[r.uid,rowStr(r)]));catsOrigText=catKey();catsMeta.exists=true;$("#dSave").close();render();refreshSave();
+    if(mode==="pr"){toast("Pull request créée : "+link+"\nFusionne-la pour publier.",9000);window.open(link,"_blank")}else toast("Enregistré. La publication prend environ 1 minute.",6000)
+  }catch(e){$("#svErr").textContent=e.message+(e.status===401||e.status===403?"\nVérifie le jeton et ses droits (Contents: Read and write).":"")}finally{btn.disabled=!cfg.token}};
+$("#svMode").onchange=()=>{};
+
+/* ---------- Sélection multiple ---------- */
+function updateBulk(){pruneSel();const n=sel.size;$("#bulk").hidden=!n;$("#bulkN").textContent=n+" sélectionné"+(n>1?"s":"")}
+$("#bAll").onclick=()=>{filtered().forEach(r=>sel.add(r));render()};
+$("#bNone").onclick=()=>{sel.clear();render()};
+$("#bBulkDel").onclick=()=>{const n=sel.size;if(!n||!confirm(`Supprimer ${n} événement${n>1?"s":""} ? (annulable tant que tu n'as pas enregistré : recharge la page)`))return;
+  rows=rows.filter(r=>!sel.has(r));sel.clear();render();refreshSave();toast(n+" supprimé"+(n>1?"s":""))};
+$("#bBulkDup").onclick=()=>{const src=[...sel];if(!src.length)return;sel.clear();
+  for(const r of src){const c={...r};c.title=(r.title+" (copie)").trim();c.uid=newUid(c);rows.push(c);sel.add(c)}sortRows();render();refreshSave();toast(src.length+" dupliqué"+(src.length>1?"s":"")+" (sélectionnés, modifie-les ensuite)")};
+function sortRows(){rows.sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:0)}
+
+/* décalage de dates naïves (pas de DST : ce sont des heures locales) */
+function shiftStr(str,days,min){if(!str)return str;const all=str.length===10;
+  const [Y,M,D]=str.slice(0,10).split("-").map(Number);const [hh,mm]=all?[0,0]:str.slice(11,16).split(":").map(Number);
+  const d=new Date(Date.UTC(Y,M-1,D+days,hh,mm+(all?0:min)));const p=n=>String(n).padStart(2,"0");
+  const ds=`${d.getUTCFullYear()}-${p(d.getUTCMonth()+1)}-${p(d.getUTCDate())}`;return all?ds:`${ds} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`}
+function openBulk(){if(!sel.size)return;$("#bkTitle").textContent=`Modifier ${sel.size} événement${sel.size>1?"s":""}`;
+  $("#bkCat").replaceChildren(h("option",{value:""},"— inchangé —"),...cats.map(c=>h("option",{value:c.category},c.category)));
+  for(const id of["#bkStatus","#bkNMode"])$(id).value="";for(const id of["#bkEmoji","#bkTz","#bkLoc","#bkUrl","#bkNotes","#bkDays","#bkMin","#bkDur"])$(id).value="";$("#bkErr").textContent="";$("#dBulk").showModal()}
+$("#bBulkEdit").onclick=openBulk;$("#bkCancel").onclick=()=>$("#dBulk").close();
+$("#bkOk").onclick=()=>{const v=id=>$(id).value.trim(),err=[];
+  const cat=v("#bkCat"),st=v("#bkStatus"),emo=v("#bkEmoji"),tz=v("#bkTz"),loc=v("#bkLoc"),url=v("#bkUrl"),nm=v("#bkNMode"),nt=$("#bkNotes").value.trim();
+  const days=parseInt(v("#bkDays")||"0",10),min=parseInt(v("#bkMin")||"0",10),dur=v("#bkDur")?parseInt(v("#bkDur"),10):null;
+  if(tz&&!validTZ(tz))err.push("Fuseau horaire inconnu : "+tz);if(isNaN(days)||isNaN(min))err.push("Décalage invalide.");if(dur!==null&&!(dur>0))err.push("Durée invalide.");
+  if((nm==="replace"||nm==="append")&&!nt)err.push("Écris le texte des notes.");
+  if(err.length){$("#bkErr").textContent=err.join("\n");return}
+  let n=0;for(const r of sel){
+    if(cat)r.category=cat;if(st)r.status=st;if(emo)r.emoji=emo;if(tz)r.timezone=tz;
+    if(loc){r.location=loc;r.geo=""}if(url)r.url=url;
+    if(nm==="replace")r.notes=nt;else if(nm==="append")r.notes=r.notes?r.notes+"\n"+nt:nt;else if(nm==="clear")r.notes="";
+    if(days||min){r.start=shiftStr(r.start,days,min);if(r.end)r.end=shiftStr(r.end,days,min);
+      if(r.exceptions&&days)r.exceptions=r.exceptions.split(";").map(x=>x.trim()).filter(Boolean).map(x=>shiftStr(x,days,0)).join(";")}
+    if(dur&&r.start&&r.start.length>10)r.end=shiftStr(r.start,0,dur);
+    n++}
+  sortRows();$("#dBulk").close();render();refreshSave();toast(n+" événement"+(n>1?"s":"")+" modifié"+(n>1?"s":""))};
+
+/* ---------- Ajout en lot ---------- */
+function validDay(d){const[y,m,dd]=d.slice(0,10).split("-").map(Number),t=new Date(Date.UTC(y,m-1,dd));return t.getUTCFullYear()===y&&t.getUTCMonth()===m-1&&t.getUTCDate()===dd}
+function normDT(x){const r=normDT0(x);if(!r)return null;if(!validDay(r))return null;const t=r.slice(11);if(t&&(+t.slice(0,2)>23||+t.slice(3)>59))return null;return r}
+function normDT0(x){x=(x||"").trim().replace("T"," ");let m;
+  if(m=x.match(/^(\d{4})-(\d{2})-(\d{2})(?:\s+(\d{1,2})[:h](\d{2}))?$/))return m[4]?`${m[1]}-${m[2]}-${m[3]} ${m[4].padStart(2,"0")}:${m[5]}`:`${m[1]}-${m[2]}-${m[3]}`;
+  if(m=x.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s+(\d{1,2})[:h](\d{2}))?$/)){const d=`${m[3]}-${m[2].padStart(2,"0")}-${m[1].padStart(2,"0")}`;return m[4]?`${d} ${m[4].padStart(2,"0")}:${m[5]}`:d}
+  return null}
+function splitLine(l,sep){if(sep==="\t")return l.split("\t");const out=[];let f="",q=false;for(const c of l){if(c==='"')q=!q;else if(c===sep&&!q){out.push(f);f=""}else f+=c}out.push(f);return out}
+function parseMulti(){const text=$("#mText").value.replace(/\r/g,"").split("\n").filter(l=>l.trim());const ev=[],err=[];if(!text.length)return{ev,err};
+  const sepOf=l=>l.includes("\t")?"\t":l.includes("|")?"|":l.includes(";")?";":",";
+  const first=text[0],sep0=sepOf(first),hd=splitLine(first,sep0).map(x=>x.trim().toLowerCase());
+  const header=hd.includes("title")||hd.includes("titre")||hd.includes("start")||hd.includes("uid");
+  const alias={titre:"title",debut:"start",début:"start",fin:"end",lieu:"location",lien:"url",catégorie:"category",categorie:"category",statut:"status",fuseau:"timezone"};
+  const names=header?hd.map(x=>alias[x]||x):["start","title","location","end","url"];
+  (header?text.slice(1):text).forEach((l,i)=>{const line=i+1+(header?1:0),sep=sepOf(l),f=splitLine(l,sep).map(x=>x.trim()),o={};
+    names.forEach((n,k)=>{if(f[k]!==undefined&&f[k]!=="")o[n]=f[k]});
+    // sans en-tête : "2026-12-05 20:00" peut être séparé par ';' → déjà dans f[0]
+    const e={category:o.category||$("#mCat").value,status:o.status||$("#mStatus").value,emoji:o.emoji||$("#mEmoji").value.trim(),title:o.title||"",timezone:o.timezone||$("#mTz").value.trim()||"Europe/Paris",
+      location:o.location||"",url:o.url||"",notes:o.notes||"",recurrence:o.recurrence||"",exceptions:o.exceptions||"",geo:o.geo||""};
+    const s=normDT(o.start),en=o.end?normDT(o.end):"";const p=[];
+    if(!e.title)p.push("titre manquant");if(!s)p.push("date de début invalide («"+(o.start||"")+"»)");if(o.end&&en===null)p.push("date de fin invalide");
+    if(!cats.some(c=>c.category===e.category))p.push("catégorie inconnue «"+e.category+"»");if(!validTZ(e.timezone))p.push("fuseau inconnu");
+    if(s&&en&&(s.length!==en.length||en<=s&&en!==s))p.push("fin incohérente");
+    if(p.length)err.push(`ligne ${line} : ${p.join(", ")}`);else{e.start=s;e.end=en||"";ev.push(e)}});
+  return{ev,err}}
+function previewMulti(){const{ev,err}=parseMulti();const p=$("#mPrev");p.replaceChildren(h("div",{},`${ev.length} événement${ev.length>1?"s":""} prêt${ev.length>1?"s":""}`+(err.length?` · ${err.length} erreur${err.length>1?"s":""}`:"")),
+  ...err.slice(0,8).map(x=>h("div",{class:"err"},x)),...ev.slice(0,5).map(e=>h("div",{},`${e.start} · ${e.title}${e.location?" · "+e.location:""}`)),ev.length>5?h("div",{},"…"):null);
+  $("#mOk").disabled=!ev.length||!!err.length}
+$("#bMulti").onclick=()=>{$("#mCat").replaceChildren(...cats.map(c=>h("option",{value:c.category},c.category)));$("#mCat").value=$("#fCat").value||cats[0]?.category;$("#mText").value="";previewMulti();$("#dMulti").showModal()};
+for(const id of["#mText","#mCat","#mStatus","#mTz","#mEmoji"])$(id).addEventListener("input",previewMulti);
+$("#mCancel").onclick=()=>$("#dMulti").close();
+$("#mOk").onclick=()=>{const{ev,err}=parseMulti();if(err.length||!ev.length)return;sel.clear();
+  for(const e of ev){const r={};cols.forEach(c=>r[c]="");Object.assign(r,e);r.uid=newUid(e);rows.push(r);sel.add(r)}
+  sortRows();$("#dMulti").close();render();refreshSave();toast(ev.length+" événement"+(ev.length>1?"s ajoutés":" ajouté")+" (sélectionnés)")};
+
+/* ---------- Boot ---------- */
+loadAll();
+</script>
+</body>
+</html>

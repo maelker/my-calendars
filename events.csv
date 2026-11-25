@@ -5622,3 +5622,37 @@ concert-europe-20271008,approved,Concert,🎸,Europe,2027-10-08,2027-10-08,Europ
 concert-meshuggah-20271019,approved,Concert,🤘,Meshuggah,2027-10-19,2027-10-19,Europe/Paris,"Halle Tony Garnier, Lyon",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 concert-bruce-dickinson-20271207,approved,Concert,🤘,Bruce Dickinson,2027-12-07,2027-12-07,Europe/Paris,"Radiant-Bellevue, Caluire-et-Cuire",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 A038E1D6-8B6E-431C-8CBD-F21E12AC2C79,approved,Sport,🏅,Départ Vendée Globe,2028-11-12,2028-11-12,Europe/Paris,,,,,,
+nations-champ-2026-r4-fra-fij@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J4 : France 🇫🇷 vs Fidji 🇫🇯,2026-11-07 21:10,2026-11-07 23:10,Europe/Paris,"Groupama Stadium, Décines-Charpieu (Lyon)",,"Nations Championship 2026 — Journée 4 (phase hémisphère Nord)
+
+🇫🇷 France vs 🇫🇯 Fidji
+📍 Groupama Stadium, Décines-Charpieu (Lyon)
+🕘 21h10 heure de Paris (CET)
+
+✅ Résultat : France 54 – 17 Fidji
+📺 Diffusion : TF1
+Source : equipe-france.fr / rezosport.com
+Tags : France, Nations Championship, Rugby",,,
+nations-champ-2026-r5-fra-rsa@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J5 : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-13 21:10,2026-11-13 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 5 (phase hémisphère Nord)
+
+🇫🇷 France vs 🇿🇦 Afrique du Sud (Springboks)
+📍 Stade de France, Saint-Denis
+🕘 21h10 heure de Paris (CET)
+
+Source : equipe-france.fr / mycomm.fr
+Tags : France
+
+✅ Résultat : France 21 – 19 Afrique du Sud",,,
+nations-champ-2026-r6-fra-arg@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J6 : France 🇫🇷 vs Argentine 🇦🇷,2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 6 (phase hémisphère Nord)
+
+🇫🇷 France vs 🇦🇷 Argentine (Pumas)
+📍 Stade de France, Saint-Denis
+🕘 21h10 heure de Paris (CET)
+
+Source : equipe-france.fr / mycomm.fr
+Tags : France, Nations Championship, Rugby
+
+✅ Résultat : France 45 – 17 Argentine",,,
+rugby-fra-arg-20261121,rejected,Rugby,🏉,France 🇫🇷 – Argentine 🇦🇷 (Nations Championship),2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,"Stade de France, Saint-Denis",https://www.stadefrance.com/en/groups/ticket/france-argentina-2026,Doublon de nations-champ-2026-r6-fra-arg@rugby (gardé).,,,
+nations-champ-2026-finals@rugby,rejected,Rugby,🏉,XV de France — Nations Champ. Finals Weekend 🇬🇧 Twickenham (⚠️ TBC),2026-11-27,2026-11-29,Europe/Paris,Twickenham Stadium,,Remplacé par la ligne de la finale France – Afrique du Sud (nations-champ-2026-final-fra-rsa@rugby).,,,
+nations-champ-2026-final-fra-rsa@rugby,approved,Rugby,🏉,🏆 Finale Nations Championship : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-29 17:40,2026-11-29 19:40,Europe/Paris,"Allianz Stadium (Twickenham), Londres",https://www.skysports.com/rugby-union/news/13615041/nations-championship-fixtures-france-to-play-south-africa-in-final-as-england-face-new-zealand-rematch-plus-ireland-vs-australia,"Finale du Nations Championship 2026 (1er Nord vs 1er Sud), Finals Weekend à Twickenham.
+Coup d'envoi 16h40 GMT = 17h40 heure de Paris.",,,

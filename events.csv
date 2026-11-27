@@ -1,7 +1,7 @@
 uid,status,category,emoji,title,start,end,timezone,location,url,notes,recurrence,exceptions,geo
-2C15F2FC-CCDD-4DF4-B332-BA02A66CA295,approved,Football,⚽,Match OL/OM,2016-01-24 21:00,2016-01-24 23:30,Europe/Berlin,Stade des lumières,,,,,
-D773AD46-06B1-4AB7-A184-91EC7C48044B,approved,Sport,🏅,50th Super Bowl,2016-02-08 00:35,2016-02-08 04:00,Europe/Berlin,,,,,,
-81B4751E-CCE9-45DD-AB87-13CF6D03E253,approved,Hockey,🏒,Hockey,2016-02-20 20:00,2016-02-20 22:30,Europe/Berlin,Patinoire pôle sud,,"� de finales
+2C15F2FC-CCDD-4DF4-B332-BA02A66CA295,approved,Football,⚽,Match OL/OM,2016-01-24 21:00,2016-01-24 23:30,Europe/Paris,Stade des lumières,,,,,
+D773AD46-06B1-4AB7-A184-91EC7C48044B,approved,Sport,🏅,50th Super Bowl,2016-02-08 00:35,2016-02-08 04:00,Europe/Paris,,,,,,
+81B4751E-CCE9-45DD-AB87-13CF6D03E253,approved,Hockey,🏒,Hockey,2016-02-20 20:00,2016-02-20 22:30,Europe/Paris,Patinoire pôle sud,,"� de finales
 Bruleurs de loups / Rouen",,,
 1F998CE3-F08E-437D-91FD-34AA7D729FFE,approved,Sport,🏅,Handball féminin finale France-Norvège,2017-12-17 17:30,2017-12-17 18:30,Europe/Paris,,,,,,
 CFFD2149-0E2D-44F3-8F4D-A1B04997CBCE,approved,Cyclisme,🚴,Échappé belle papa,2018-08-31 18:00,2018-09-02 19:00,Europe/Paris,,,,,,
@@ -118,8 +118,8 @@ _____________________________
 
 📩 CONTACT 📩
 
-Presse : theo@pleiadeprod.com
-Partenaires : marie-pierre@pleiadeprod.com
+Presse : [e-mail retiré]
+Partenaires : [e-mail retiré]
 _____________________________
 
 ℹ️ NOUS SUIVRE ℹ️
@@ -542,8 +542,6 @@ See Live Results: https://olympics.com/en/paris-2024/results/boxing/men-s-51kg/f
 See Live Results: https://olympics.com/en/paris-2024/results/table-tennis/men-s-team/fnl-00020000. Please note date/time for this event can be updated without notice. Please check the official schedule: https://www.olympics.com/en/paris-2024/schedule",,,
 0F0F86C4-CCBD-4A12-A01A-6A780DA7C4E5,approved,Olympiques,🥇,Paris 2024 - FRA vs ESP Football Men's Gold Medal Match,2024-08-09 18:00,2024-08-09 19:45,Europe/Paris,Parc des Princes,,"Olympic Games Paris 2024 - FRA vs ESP Football Men's Gold Medal Match
 See Live Results: https://olympics.com/en/paris-2024/results/football/men/fnl-000100--. Please note date/time for this event can be updated without notice. Please check the official schedule: https://www.olympics.com/en/paris-2024/schedule",,,
-96499578-020C-41C9-A01F-6C1614F138F0,approved,Olympiques,🥇,Paris 2024 - FRA vs ESP Football Men's Gold Medal Match,2024-08-09 18:00,2024-08-09 19:45,Europe/Paris,Parc des Princes,,"Olympic Games Paris 2024 - FRA vs ESP Football Men's Gold Medal Match
-See Live Results: https://olympics.com/en/paris-2024/results/football/men/fnl-000100--. Please note date/time for this event can be updated without notice. Please check the official schedule: https://www.olympics.com/en/paris-2024/schedule",,,
 C0921B3C-52C2-43C5-BA67-7C23E228726D,approved,Olympiques,🥇,Paris 2024 - Athletics Women's 4 x 100m Relay Final,2024-08-09 19:30,2024-08-09 19:31,Europe/Paris,Stade de France,,"Olympic Games Paris 2024 -  Athletics Women's 4 x 100m Relay Final
 See Live Results: https://olympics.com/en/paris-2024/results/athletics/women-s-4-x-100m-relay/fnl-000100--. Please note date/time for this event can be updated without notice. Please check the official schedule: https://www.olympics.com/en/paris-2024/schedule",,,
 825F9D8B-46F4-465E-BC14-A73621FBEE09,approved,Olympiques,🥇,Paris 2024 - Athletics Men's 4 x 100m Relay Final,2024-08-09 19:47,2024-08-09 19:48,Europe/Paris,Stade de France,,"Olympic Games Paris 2024 -  Athletics Men's 4 x 100m Relay Final
@@ -963,19 +961,16 @@ C3D7BF43-D2C1-42AF-8F54-9FAB641DE239,approved,Football,⚽️,Rodez / GF38,2026-
 mxgp26-r01-arg-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.1 Qualif — Argentine 🇦🇷 Bariloche [✅],2026-03-07 14:00,2026-03-07 15:20,America/Argentina/Buenos_Aires,Bariloche,,"Manche 1/19 — Grand Prix d'Argentine
 Circuit : Bariloche, Patagonie
 ⏱ QUALIFICATION MXGP — 14h00 heure locale (ART)
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Qualification",,,
 mxgp26-r01-arg-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.1 Race 1 — Argentine 🇦🇷 Bariloche [✅],2026-03-08 12:00,2026-03-08 13:45,America/Argentina/Buenos_Aires,Bariloche,,"Manche 1/19 — Grand Prix d'Argentine
 Circuit : Bariloche, Patagonie
 🏁 RACE 1 MXGP — 12h00 heure locale (ART) — 30 min + 2 tours
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Race 1",,,
 mxgp26-r01-arg-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.1 Race 2 — Argentine 🇦🇷 Bariloche [✅],2026-03-08 15:00,2026-03-08 16:30,America/Argentina/Buenos_Aires,Bariloche,,"Manche 1/19 — Grand Prix d'Argentine
 Circuit : Bariloche, Patagonie
 🏁 RACE 2 MXGP — 15h00 heure locale (ART) — 30 min + 2 tours
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Race 2",,,
 crankworx-2026-rotorua@worldtour,approved,Cyclisme,🚵,Crankworx Rotorua 2026,2026-03-11,2026-03-15,Europe/Paris,Whakarewarewa Forest,,"Crankworx World Tour 2026 – Étape 2/5
@@ -995,7 +990,6 @@ E0F74DA9-4586-4609-9296-563C33077283,approved,Football,⚽️,Laval / GF38,2026-
 mxgp26-r02-and-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.2 Qualif — Andalousie 🇪🇸 Almonte [✅],2026-03-21 17:25,2026-03-21 18:45,Europe/Madrid,Almonte,,"Manche 2/19 — Grand Prix d'Andalousie
 Circuit : Almonte, Huelva
 ⏱ QUALIFICATION MXGP — 17h25 heure locale (CEST)
-Source : mxbars.net / mxgp.com
 ✅ Terminé
 Tags : MXGP, Qualification",,,
 44DAF20F-E41C-4495-AD4A-C812207EE983,approved,Athlétisme,🏃,CDM Indoor : perche h,2026-03-21 18:25,2026-03-21 19:25,Europe/Paris,,,,,,
@@ -1005,13 +999,11 @@ Tags : MXGP, Qualification",,,
 mxgp26-r02-and-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.2 Race 1 — Andalousie 🇪🇸 Almonte [✅],2026-03-22 13:15,2026-03-22 14:55,Europe/Madrid,Almonte,,"Manche 2/19 — Grand Prix d'Andalousie
 Circuit : Almonte, Huelva
 🏁 RACE 1 MXGP — 13h15 heure locale (CEST) — 30 min + 2 tours
-Source : mxbars.net / mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 1",,,
 mxgp26-r02-and-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.2 Race 2 — Andalousie 🇪🇸 Almonte [✅],2026-03-22 16:10,2026-03-22 17:45,Europe/Madrid,Almonte,,"Manche 2/19 — Grand Prix d'Andalousie
 Circuit : Almonte, Huelva
 🏁 RACE 2 MXGP — 16h10 heure locale (CEST) — 30 min + 2 tours
-Source : mxbars.net / mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 2",,,
 66ABBA91-13E1-4839-8621-A1BA10987481,approved,Esport,🎮,MDR / S2G Esport,2026-03-22 17:00,2026-03-22 18:00,Europe/Paris,,,,,,
@@ -1029,21 +1021,18 @@ Heure française : 21h00",,,
 mxgp26-r03-sui-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.3 Qualif — Suisse 🇨🇭 Frauenfeld [✅],2026-03-28 17:10,2026-03-28 18:30,Europe/Zurich,Frauenfeld,,"Manche 3/19 — Grand Prix de Suisse
 Circuit : Frauenfeld
 ⏱ QUALIFICATION MXGP — 17h10 heure locale (CEST)
-Source : mxgp.com / mxbars.net
 ✅ Terminé
 Tags : MXGP, Qualification",,,
 356BCE76-98B7-4A5C-88CA-656665E7A53E,approved,Athlétisme,🏃,10km Aix-les-Bains,2026-03-29 09:45,2026-03-29 10:45,Europe/Paris,,,,,,
 mxgp26-r03-sui-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.3 Race 1 — Suisse 🇨🇭 Frauenfeld [✅],2026-03-29 14:15,2026-03-29 15:55,Europe/Zurich,Frauenfeld,,"Manche 3/19 — Grand Prix de Suisse
 Circuit : Frauenfeld
 🏁 RACE 1 MXGP — 14h15 heure locale (CEST) — 30 min + 2 tours
-Source : mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 1",,,
 D245C421-A741-4299-87C3-84D444DB666B,approved,Esport,🎮,GF : EP / MDR,2026-03-29 17:00,2026-03-29 18:00,Europe/Paris,,,,,,
 mxgp26-r03-sui-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.3 Race 2 — Suisse 🇨🇭 Frauenfeld [✅],2026-03-29 17:10,2026-03-29 18:45,Europe/Zurich,Frauenfeld,,"Manche 3/19 — Grand Prix de Suisse
 Circuit : Frauenfeld
 🏁 RACE 2 MXGP — 17h10 heure locale (CEST) — 30 min + 2 tours
-Source : mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 2",,,
 france-colombie-29032026@cdm2026,approved,Football,🇫🇷,France vs 🇨🇴 Colombie – Amical,2026-03-29 22:00,2026-03-30 00:00,Europe/Paris,Northwest Stadium - Landover (Maryland,,"Match amical de préparation à la Coupe du Monde 2026.
@@ -1059,20 +1048,17 @@ F8FB28C3-56A2-4308-B2AE-5156F95524FF,approved,Football,⚽️,Guingamp / GF38,20
 mxgp26-r04-sar-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.4 Qualif — Sardaigne 🇮🇹 Riola Sardo [✅],2026-04-11 11:15,2026-04-11 12:35,Europe/Rome,Riola Sardo,,"Manche 4/19 — Grand Prix de Sardaigne
 Circuit : Riola Sardo
 ⏱ QUALIFICATION MXGP — 11h15 heure locale (CEST)
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Qualification",,,
 CF13F9AF-E9F9-4C05-B150-9559A0C87D7B,approved,Esport,🎮,NXR / MDR,2026-04-11 15:00,2026-04-11 16:00,Europe/Paris,,,,,,
 mxgp26-r04-sar-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.4 Race 1 — Sardaigne 🇮🇹 Riola Sardo [✅],2026-04-12 14:15,2026-04-12 15:55,Europe/Rome,Riola Sardo,,"Manche 4/19 — Grand Prix de Sardaigne
 Circuit : Riola Sardo
 🏁 RACE 1 MXGP — 14h15 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Race 1",,,
 mxgp26-r04-sar-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.4 Race 2 — Sardaigne 🇮🇹 Riola Sardo [✅],2026-04-12 17:10,2026-04-12 18:45,Europe/Rome,Riola Sardo,,"Manche 4/19 — Grand Prix de Sardaigne
 Circuit : Riola Sardo
 🏁 RACE 2 MXGP — 17h10 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Race 2",,,
 16B566D0-2456-4E62-B8C0-410B72C9970A,approved,Esport,🎮,LEC : TH / KC,2026-04-12 19:15,2026-04-12 20:15,Europe/Paris,,,,,,
@@ -1087,19 +1073,16 @@ Accès via Twitch/YouTube Warcraft.",,,
 mxgp26-r05-tre-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.5 Qualif — Trentin 🇮🇹 Pietramurata [✅],2026-04-18 11:15,2026-04-18 12:35,Europe/Rome,Pietramurata,,"Manche 5/19 — Grand Prix du Trentin
 Circuit : Pietramurata
 ⏱ QUALIFICATION MXGP — 11h15 heure locale (CEST)
-Source : racerxonline.com
 ✅ Terminé
 Tags : MXGP, Qualification",,,
 mxgp26-r05-tre-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.5 Race 1 — Trentin 🇮🇹 Pietramurata [✅],2026-04-19 14:15,2026-04-19 15:55,Europe/Rome,Pietramurata,,"Manche 5/19 — Grand Prix du Trentin
 Circuit : Pietramurata
 🏁 RACE 1 MXGP — 14h15 heure locale (CEST) — 30 min + 2 tours
-Source : mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 1",,,
 mxgp26-r05-tre-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.5 Race 2 — Trentin 🇮🇹 Pietramurata [✅],2026-04-19 17:10,2026-04-19 18:45,Europe/Rome,Pietramurata,,"Manche 5/19 — Grand Prix du Trentin
 Circuit : Pietramurata
 🏁 RACE 2 MXGP — 17h10 heure locale (CEST) — 30 min + 2 tours
-Source : mxgp.com
 ✅ Terminé
 Tags : MXGP, Race 2",,,
 68A3D83D-91B3-41AE-8B5E-4010AECA279E,approved,Esport,🎮,MDR / F9,2026-04-19 21:00,2026-04-19 22:00,Europe/Paris,,,,,,
@@ -1220,7 +1203,6 @@ Tags : Coupe de France, Finale, Football",,,
 mxgp26-r06-fra-q@mxgp,approved,Mécanique,🏍️🇫🇷,MXGP Rd.6 Qualif — France (Lacapelle-Marival) 🔜,2026-05-23 11:15,2026-05-23 12:35,Europe/Paris,Lacapelle-Marival,,"Manche 6/19 — Grand Prix de France
 Circuit : Lacapelle-Marival, Lot
 ⏱ QUALIFICATION MXGP — 11h15 heure locale (CEST)
-Source : racerxonline.com / mxgp.com
 📺 En direct sur MXGP-TV.com
 Tags : France, MXGP, Qualification",,,
 58ED18D5-800C-4B20-B8BA-734E70E7BA3F,approved,Esport,🚀,KC vs M8 — RLCS Paris Major 2026 (Playoffs — Upper Bracket Semi Final),2026-05-23 14:00,2026-05-23 16:00,Europe/Paris,Paris La Défense Arena,,"Compétition : RLCS 2026 — Paris Major
@@ -1268,13 +1250,11 @@ Tags : Créateurs, Crunch Creator, Événement, Rugby",,,
 mxgp26-r06-fra-r1@mxgp,approved,Mécanique,🏍️🇫🇷,MXGP Rd.6 Race 1 — France (Lacapelle-Marival) 🔜,2026-05-24 10:00,2026-05-24 11:45,Europe/Paris,Lacapelle-Marival,,"Manche 6/19 — Grand Prix de France
 Circuit : Lacapelle-Marival, Lot
 🏁 RACE 1 MXGP — 10h00 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 📺 En direct sur MXGP-TV.com
 Tags : France, MXGP, Race 1",,,
 mxgp26-r06-fra-r2@mxgp,approved,Mécanique,🏍️🇫🇷,MXGP Rd.6 Race 2 — France (Lacapelle-Marival) 🔜,2026-05-24 13:00,2026-05-24 14:45,Europe/Paris,Lacapelle-Marival,,"Manche 6/19 — Grand Prix de France
 Circuit : Lacapelle-Marival, Lot
 🏁 RACE 2 MXGP — 13h00 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 📺 En direct sur MXGP-TV.com
 Tags : France, MXGP, Race 2",,,
 D07FA16C-00C8-4FA9-9A18-808CF2076C86,approved,Esport,🚀,KC vs Vitality — RLCS Paris Major 2026 (Playoffs — Semi Final),2026-05-24 16:30,2026-05-24 18:30,Europe/Paris,Paris La Défense Arena,,"Compétition : RLCS 2026 — Paris Major
@@ -1703,7 +1683,6 @@ wc2026-m38@fifa,approved,Football,⚽ 🇧🇪,Belgique vs 🇮🇷 Iran (Gr.G),
 mxgp26-r09-ita-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.9 Race 2 — Italie 🇮🇹 Montevarchi,2026-06-21 17:10,2026-06-21 18:45,Europe/Rome,Montevarchi,,"Manche 9/19 — Grand Prix d'Italie
 Circuit : Montevarchi
 🏁 RACE 2 MXGP — 17h10 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 Tags : MXGP, Race 2",,,
 wc2026-m39@fifa,approved,Football,⚽ 🇺🇾,Uruguay vs 🇨🇻 Cap-Vert (Gr.H),2026-06-21 18:00,2026-06-21 20:00,America/New_York,Hard Rock Stadium,,,,,
 wc2026-m40@fifa,approved,Football,⚽ 🇳🇿,Nouvelle-Zélande vs 🇪🇬 Égypte (Gr.G),2026-06-21 21:00,2026-06-21 23:00,America/New_York,BC Place,,,,,
@@ -1759,7 +1738,6 @@ msi2026-playin-d1-kc@claude,approved,Esport,🎮,MSI 2026 Play-In - Karmine Corp
 mxgp26-r10-por-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.10 Race 1 — Portugal 🇵🇹 Águeda,2026-06-28 13:15,2026-06-28 14:55,Europe/Lisbon,Águeda,,"Manche 10/19 — Grand Prix du Portugal
 Circuit : Águeda
 🏁 RACE 1 MXGP — 13h15 heure locale (WEST = UTC+1) — 30 min + 2 tours
-Source : racerxonline.com
 Tags : MXGP, Race 1",,,
 dl2026-paris@diamondleague,approved,Athlétisme,🏃,Diamond League – Meeting de Paris 🇫🇷,2026-06-28 16:00,2026-06-29 20:30,Europe/Paris,Stade Charléty,,"Wanda Diamond League 2026
 Meeting de Paris
@@ -1767,7 +1745,6 @@ Stade Charléty, Paris, France",,,
 mxgp26-r10-por-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.10 Race 2 — Portugal 🇵🇹 Águeda,2026-06-28 16:10,2026-06-28 17:45,Europe/Lisbon,Águeda,,"Manche 10/19 — Grand Prix du Portugal
 Circuit : Águeda
 🏁 RACE 2 MXGP — 16h10 heure locale (WEST = UTC+1) — 30 min + 2 tours
-Source : racerxonline.com
 Tags : MXGP, Race 2",,,
 mdp26-01@mael,approved,Athlétisme,🏃,110m haies (H) - Séries,2026-06-28 16:55,2026-06-28 17:00,Europe/Paris,Stade Charléty,,Séries qualificatives.,,,
 mdp26-02@mael,approved,Athlétisme,🏃,Perche (H),2026-06-28 17:00,2026-06-28 18:15,Europe/Paris,Stade Charléty,,"Durée estimée (concours long, en parallèle des courses).
@@ -1884,7 +1861,6 @@ nations-champ-2026-r1-nzl-fra@rugby,approved,Rugby,🏉,XV de France — Nations
 🕘 19h10 heure locale (NZST) = 09h10 heure de Paris (CEST)
 
 1ère journée du Nations Championship, 1ère édition historique de la compétition.
-Source : equipe-france.fr / rugbypass.com
 Tags : France, Nations Championship, Rugby",,,
 cdm2026-8e-02@claude,approved,Football,⚽️ 🇵🇾,Paraguay vs 🇫🇷 France [1/8e],2026-07-04 23:00,2026-07-05 01:00,Europe/Paris,Lincoln Financial Field,,"Huitième de finale Coupe du monde 2026 - Lincoln Financial Field, Philadelphie",,,
 tdf2026-etape2@tdf2026,approved,Cyclisme,🚴,Étape 2 – Accidentée | Tarragone › Barcelone (178 km),2026-07-05,2026-07-05,Europe/Paris,Tarragone → Barcelone (Espagne),,"Type : Étape accidentée
@@ -1988,7 +1964,6 @@ nations-champ-2026-r2-aus-fra@rugby,approved,Rugby,🏉,XV de France — Nations
 📍 Suncorp Stadium, Brisbane, Australie
 🕔 15h00 heure locale (AEST) = 07h00 heure de Paris (CEST)
 
-Source : equipe-france.fr / rugbypass.com
 Tags : France, Nations Championship, Rugby",,,
 5D48330D-53C1-4068-A566-D068A02EE33B,approved,Esport,🎮,Mandatory - SGE - Last chance qualifier,2026-07-11 21:00,2026-07-11 23:00,Europe/Paris,Online,,,,,
 cdm2026-qf-03@claude,approved,Football,⚽️ 🇳🇴,Norvège vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre [Quart de finale],2026-07-11 23:00,2026-07-12 01:00,Europe/Paris,Hard Rock Stadium,,"Quart de finale Coupe du monde 2026 - Hard Rock Stadium, Miami Gardens",,,
@@ -2041,11 +2016,6 @@ steel-panther-guitare-en-scene@all,approved,Concert,🎤,Steel Panther (glam met
 Karmine Corp vs adversaire à confirmer
 Match décisif pour la qualification en playoffs !
 Résultat : À venir.",,,
-kc-ewc2026-lol-3@paris,pending,Esport,🔵,KC LoL – EWC 2026 Lower Bracket (Aujourd'hui 16 juil.),2026-07-16 12:10,2026-07-16 16:00,Europe/Paris,Paris Expo Porte de Versailles,,"EWC 2026 – LoL Group Stage (Groupe B – Lower Bracket Final Bo3)
-Karmine Corp vs adversaire à confirmer
-Match décisif pour la qualification en playoffs !
-Résultat : À venir.
-Statut d'origine : provisoire",,,
 tdf2026-etape13@tdf2026,approved,Cyclisme,🚴,Étape 13 – Accidentée | Dole › Belfort (205 km),2026-07-17,2026-07-17,Europe/Paris,Dole → Belfort (France),,"Type : Étape accidentée
 Distance : 205 km
 Étape la plus longue du Tour.",,,
@@ -2061,7 +2031,6 @@ nations-champ-2026-r3-jpn-fra@rugby,approved,Rugby,🏉,XV de France — Nations
 📍 National Stadium, Tokyo, Japon
 🕔 15h00 heure locale (JST) = 08h00 heure de Paris (CEST)
 
-Source : equipe-france.fr
 Tags : France, Nations Championship, Rugby",,,
 mxgp26-r12-gbr-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.12 Qualif — Grande-Bretagne 🇬🇧 Foxhills,2026-07-18 16:25,2026-07-18 17:45,Europe/London,Foxhills,,"Manche 12/19 — Grand Prix de Grande-Bretagne
 Circuit : Foxhills, Swindon
@@ -2569,12 +2538,10 @@ sylak-dimanche-2026@all,approved,Concert,🎤,Sylak Open Air - Dimanche (metal/p
 mxgp26-r14-bel-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.14 Race 1 — Flandre 🇧🇪 Lommel,2026-08-02 14:15,2026-08-02 15:55,Europe/Brussels,Lommel,,"Manche 14/19 — Grand Prix des Flandres
 Circuit : Lommel (sable légendaire)
 🏁 RACE 1 MXGP — 14h15 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 Tags : MXGP, Race 1",,,
 mxgp26-r14-bel-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.14 Race 2 — Flandre 🇧🇪 Lommel,2026-08-02 17:10,2026-08-02 18:45,Europe/Brussels,Lommel,,"Manche 14/19 — Grand Prix des Flandres
 Circuit : Lommel (sable légendaire)
 🏁 RACE 2 MXGP — 17h10 heure locale (CEST) — 30 min + 2 tours
-Source : racerxonline.com
 Tags : MXGP, Race 2",,,
 ewc2026-valorant@paris,approved,Esport,🎮,Valorant @ EWC Paris,2026-08-03,2026-08-23,Europe/Paris,Paris,,Valorant à l'Esports World Cup 2026 Paris. Semaines 5 à 7 — grand final en fin d'événement (dates exactes des matchs à confirmer).,,,
 5307E4D5-F0A9-40B0-9C11-52DF311340E7,approved,Esport,🔵,KC vs TH — LEC Summer Roadtrip 2026,2026-08-03 19:15,2026-08-03 22:15,Europe/Paris,"Riot Games Arena, Berlin
@@ -4403,7 +4370,6 @@ Groupe D — Journée 1
 Compétition : 21 août - 6 septembre 2026
 Poule D (Göteborg, Suède) : Suède, Monténégro, Italie, France, Slovaquie, Croatie
 📺 Diffusion : partenaires CEV
-Source : equipe-france.fr / cev.eu
 Tags : EuroVolley, Femmes, France, Volleyball",,,
 uci-dh26-r07-leg-q@ucimtb,approved,Cyclisme,🚵,UCI DH Rd.7 Qualif — France 🇫🇷 Les Gets (Haute-Savoie),2026-08-22 13:00,2026-08-22 16:30,Europe/Paris,Les Gets,,"UCI MTB Downhill World Cup 2026 — Manche 7/9
 Lieu : Les Gets, Haute-Savoie, France
@@ -4451,7 +4417,6 @@ Groupe D — Journée 2
 📍 Scandinavium, Göteborg, Suède
 🕔 15h00 heure locale (CEST)
 
-Source : equipe-france.fr
 Tags : EuroVolley, Femmes, France, Volleyball",,,
 mxgp26-r16-ned-r2@mxgp,approved,Mécanique,🏍️,MXGP Rd.16 Race 2 — Pays-Bas 🇳🇱 Arnhem,2026-08-23 17:10,2026-08-23 18:45,Europe/Amsterdam,Arnhem,,"Manche 16/19 — Grand Prix des Pays-Bas
 Circuit : Arnhem
@@ -4474,7 +4439,6 @@ Groupe D — Journée 3
 📍 Scandinavium, Göteborg, Suède
 🕖 19h00 heure locale (CEST)
 
-Source : equipe-france.fr
 Tags : EuroVolley, Femmes, France, Volleyball",,,
 eurovolley-f-2026-france-suite@volley,approved,Sport,🏐,EuroVolley Femmes — 🇫🇷 France suite (J4+ si qualifiée) — Istanbul ⚠️ TBC,2026-08-25,2026-09-06,Europe/Paris,Istanbul,,"EuroVolley Féminin 2026 — Suite de la compétition si qualifiée
 
@@ -4483,7 +4447,6 @@ eurovolley-f-2026-france-suite@volley,approved,Sport,🏐,EuroVolley Femmes — 
 📍 Sinan Erdem Dome, Istanbul, Turquie
 
 ⚠️ Matchs à confirmer selon qualification depuis les groupes.
-Source : cev.eu / equipe-france.fr
 Tags : EuroVolley, Femmes, France, Volleyball",,,
 eurobasket-2026-france@basket,approved,Sport,🏀,EuroBasket 2026 — 🇫🇷 France (27 août - 14 sept.) — Katowice,2026-08-27,2026-09-14,Europe/Paris,Katowice,,"EuroBasket 2026 — Équipe de France Masculine
 
@@ -4498,7 +4461,6 @@ General Manager : Boris Diaw
 
 Enjeu : qualification pour la Coupe du Monde FIBA 2027 (Qatar)
 📺 Diffusion : La Chaîne L'Équipe + partenaires
-Source : ffbb.com / teamfrancebasket.com
 Tags : Basketball, EuroBasket, France",,,
 dl2026-zurich@diamondleague,approved,Athlétisme,🏃,Diamond League – Weltklasse Zürich 🇨🇭,2026-08-27 00:00,2026-08-27 23:00,Europe/Zurich,Letzigrund Stadion,,"Wanda Diamond League 2026
 Weltklasse Zürich
@@ -4526,10 +4488,10 @@ La France s'est qualifiée via le tournoi de Villeurbanne (mars 2026).
 
 Enjeu : qualification pour les JO de Los Angeles 2028
 📺 Diffusion : partenaires FIBA / La Chaîne L'Équipe
-Source : fiba.basketball / teamfrancebasket.com
 Tags : Basketball, FIBA World Cup, France",,,
 dl2026-brussels-j1@diamondleague,approved,Athlétisme,🏆,Diamond League – FINALE Bruxelles J1 🇧🇪,2026-09-04 00:00,2026-09-04 23:00,Europe/Brussels,Stade Roi Baudouin,,"Wanda Diamond League 2026 – Finale (Jour 1)
 Stade Roi Baudouin, Bruxelles, Belgique",,,
+hockey-che-amical-20260904-anglet,approved,Hockey,🏒🐘,Chambéry 🆚 Anglet (match amical),2026-09-04 20:15,2026-09-04 22:45,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockey-chambery.com/chambery-anglet-rendez-vous-le-vendredi-4-septembre-a-buisson-rond/,Match de préparation avant la saison de Division 1.,,,
 795BA1DB-98EA-4845-8854-91566EBB37F3,approved,Cyclisme,🚴,Air legend W Hugo et Lucas Messager,2026-09-05,2026-09-06,Europe/Paris,"Aérodrome de Melun-Villaroche
 Melun Villaroche Aerodrome, 77550 Montereau-sur-le-Jard, France",,"Adresse : Melun Villaroche Aerodrome, 77550 Montereau-sur-le-Jard, France · Lieu : Aérodrome de Melun-Villaroche · GPS : 48.613505,2.666330",,,"48.613505,2.666330"
 dl2026-brussels-j2@diamondleague,approved,Athlétisme,🏆,Diamond League – FINALE Bruxelles J2 🇧🇪,2026-09-05 00:00,2026-09-05 23:00,Europe/Brussels,Stade Roi Baudouin,,"Wanda Diamond League 2026 – Finale (Jour 2)
@@ -4567,7 +4529,6 @@ Phases finales :
 • Demi-finales & Finale : Milan (Italie)
 
 🏆 La France est double championne olympique, grand favori !
-Source : ffvb.org / cev.eu
 ⚠️ Horaires des matchs de poule à confirmer sur cev.eu
 Tags : EuroVolley, France, Hommes, Volleyball",,,
 mxgp26-r18-chn-q@mxgp,approved,Mécanique,🏍️,MXGP Rd.18 Qualif — Chine 🇨🇳 Shanghai (⚠️ TBC),2026-09-12 17:25,2026-09-12 18:45,Asia/Shanghai,Shanghai,,"Manche 18/19 — Grand Prix de Chine
@@ -4633,13 +4594,14 @@ Circuit : Hidden Valley Motorsports Complex, Darwin
 ⏱ QUALIFICATION MXGP — heure indicative 17h25 locale (ACST = UTC+9:30)
 ⚠️ Horaire non encore publié officiellement — à vérifier sur mxgp.com
 Tags : Finale, MXGP, Qualification",,,
+hockey-che-amical-20260919-villard-de-lans,approved,Hockey,🏒🐘,Chambéry 🆚 Villard-de-Lans (match amical),2026-09-19 20:00,2026-09-19 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockey-chambery.com/chambery-anglet-rendez-vous-le-vendredi-4-septembre-a-buisson-rond/,"Match de préparation avant la saison de Division 1.
+🕗 Heure à confirmer (non publiée).",,,
 eurovolley-m-2026-france-final@volley,approved,Sport,🏐,EuroVolley Hommes — 🇫🇷 France Phases finales (si qualifiée) — Milan ⚠️ TBC,2026-09-20,2026-09-26,Europe/Paris,Milan,,"EuroVolley Masculin 2026 — Phases finales
 
 📍 Demi-finales & Finale : Milan, Italie
 🗓 Semaine du 20-26 septembre 2026
 
 ⚠️ Matchs à confirmer selon qualification depuis la poule.
-Source : cev.eu / ffvb.org
 Tags : EuroVolley, France, Hommes, Volleyball",,,
 mxgp26-r19-aus-r1@mxgp,approved,Mécanique,🏍️,MXGP Rd.19 Race 1 — Australie 🇦🇺 Darwin 🏁 (⚠️ TBC),2026-09-20 14:15,2026-09-20 15:55,Australia/Darwin,Darwin,,"Manche 19/19 — Grand Prix d'Australie — FINALE DE SAISON
 Circuit : Hidden Valley Motorsports Complex, Darwin
@@ -4687,6 +4649,7 @@ Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
+foot-fra-nl-20260925,approved,Football,⚽,🇹🇷 Turquie vs 🇫🇷 France – Ligue des nations (J1),2026-09-25 20:45,2026-09-25 22:45,Europe/Paris,"Kocaeli Stadium, Izmit (Turquie)",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
 uci-dh26-r08-whi-q@ucimtb,approved,Cyclisme,🚵,UCI DH Rd.8 Qualif — Canada 🇨🇦 Whistler (1ère fois !),2026-09-26 13:00,2026-09-26 16:30,America/Vancouver,Whistler Mountain Bike Park,,"UCI MTB Downhill World Cup 2026 — Manche 8/9
 Lieu : Whistler Mountain Bike Park, British Columbia, Canada
 
@@ -4735,6 +4698,7 @@ Tags : Downhill, Finale Men, UCI MTB",,,
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
+foot-fra-nl-20260928,approved,Football,⚽,🇧🇪 Belgique vs 🇫🇷 France – Ligue des nations (J2),2026-09-28 20:45,2026-09-28 22:45,Europe/Paris,"Stade Roi Baudouin, Bruxelles",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
 2ba24409e26f2a422216d61d24319123@bdl-2026-2027,approved,Hockey,🏠🏒,J6 · Grenoble 🆚 Cergy-Pontoise,2026-09-29 20:00,2026-09-29 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 6/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -4775,6 +4739,7 @@ f9406e493251edaeb408d1bb6e21049b@bdl-2026-2027,approved,Hockey,✈️🏒,J7 · 
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
+foot-fra-nl-20261002,approved,Football,⚽,🇫🇷 France vs 🇮🇹 Italie – Ligue des nations (J3),2026-10-02 20:45,2026-10-02 22:45,Europe/Paris,"Stade de France, Saint-Denis",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
 EF596603-1C06-4C55-B9C7-2B829729F587,approved,Cyclisme,🚲,"BMX WC 2026 — Manche 5 | Mentougou, Beijing 🇨🇳",2026-10-03,2026-10-03,Europe/Paris,"Mentougou, Beijing, Chine",,"UCI BMX Racing World Cup 2026 — Manche 5
 Étape 3 sur 5 — Première fois en Chine !
 
@@ -4795,6 +4760,12 @@ Pattern habituel — horaires officiels à confirmer sur ucimtbworldseries.com
 
 🏅 Site olympique de Lake Placid — dernière manche de la saison, championnes et champions de la Coupe du Monde 2026 désignés ici !
 Tags : Downhill, Finale Saison, Qualification, UCI MTB",,,
+hockey-che-d1-2026-j01-caen,approved,Hockey,🏒🐘,J1 · Chambéry 4-3 Caen,2026-10-03 20:00,2026-10-03 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 1/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Caen
+
+✅ Résultat : Chambéry 4–3 Caen (victoire, a.p.)",,,
 9718F8AD-5C16-4046-999F-3C79C3C0004C,approved,Cyclisme,🚲,"BMX WC 2026 — Manche 6 | Mentougou, Beijing 🇨🇳",2026-10-04,2026-10-04,Europe/Paris,"Mentougou, Beijing, Chine",,"UCI BMX Racing World Cup 2026 — Manche 6
 Étape 3 sur 5 — Première fois en Chine !
 
@@ -4832,6 +4803,7 @@ Tags : Downhill, Finale Men, Finale Saison, UCI MTB",,,
 
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !",,,
+foot-fra-nl-20261005,approved,Football,⚽,🇫🇷 France vs 🇧🇪 Belgique – Ligue des nations (J4),2026-10-05 20:45,2026-10-05 22:45,Europe/Paris,"Stade de France, Saint-Denis",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
 9904064E-6AB7-48EE-A505-F4660EC2DEB1,approved,Cyclisme,🚲,"BMX WC 2026 — Manche 7 | Chongli, Zhangjiakou 🇨🇳",2026-10-10,2026-10-10,Europe/Paris,"Chongli, Zhangjiakou, Chine",,"UCI BMX Racing World Cup 2026 — Manche 7
 Étape 4 sur 5
 
@@ -4841,6 +4813,12 @@ Tags : Downhill, Finale Men, Finale Saison, UCI MTB",,,
 
 🔗 Plus d'infos : https://www.uci.org",,,
 6-forever-nu-amperage@concerts2026,approved,Concert,🎤,Forever Nu! Ultimate British Tribute Festival - L'Ampérage,2026-10-10 19:00,2026-10-10 23:00,Europe/Paris,L'Ampérage,,Festival tribute britannique,,,
+hockey-che-d1-2026-j02-lyon,approved,Hockey,🏒🐘,J2 · Lyon 5-2 Chambéry,2026-10-10 20:00,2026-10-10 22:30,Europe/Paris,Lyon,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 2/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Lyon
+
+✅ Résultat : Chambéry 2–5 Lyon (défaite)",,,
 5860acce533b82c0e007aace5439286a@bdl-2026-2027,approved,Hockey,✈️🏒,J9 · Bordeaux 🆚 Grenoble,2026-10-10 20:30,2026-10-10 23:00,Europe/Paris,"Patinoire de Mériadeck, Bordeaux, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 9/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h30 (heure de Paris)
@@ -4885,6 +4863,12 @@ Horaires français : matchs généralement entre 2h et 12h du matin (UTC-7 = -8h
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j03-dunkerque,approved,Hockey,🏒🐘,J3 · Chambéry 3-2 Dunkerque,2026-10-17 20:00,2026-10-17 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 3/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Dunkerque
+
+✅ Résultat : Chambéry 3–2 Dunkerque (victoire, t.a.b.)",,,
 worlds2026-swiss1@worlds2026,approved,Esport,🌍,"Worlds LOL 2026 – Swiss Stage Partie 1 (23-26 oct.) | Allen, Texas",2026-10-23,2026-10-26,Europe/Paris,Credit Union of Texas Event Center,,"Worlds 2026 – Swiss Stage (1ère partie)
 Dates : 23-26 octobre 2026
 Lieu : Credit Union of Texas Event Center, Allen (Texas)
@@ -4911,6 +4895,12 @@ wec2026-qatar@endurance,approved,Mécanique,🏎️,WEC – 1812 km du Qatar (Au
 1812 km du Qatar
 Circuit International de Lusail, Qatar
 (Reporté depuis l'ouverture de saison pour raisons géopolitiques)",,,
+hockey-che-d1-2026-j04-epinal,approved,Hockey,🏒🐘,J4 · Épinal 3-1 Chambéry,2026-10-24 20:00,2026-10-24 22:30,Europe/Paris,Épinal,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 4/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Épinal
+
+✅ Résultat : Chambéry 1–3 Épinal (défaite)",,,
 793a81c3ec57e446d8aa790e7331b01b@bdl-2026-2027,approved,Hockey,🏠🏒,J12 · Grenoble 🆚 Chamonix,2026-10-25 18:00,2026-10-25 20:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 12/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 18h00 (heure de Paris)
@@ -4950,6 +4940,12 @@ worlds2026-swiss2@worlds2026,approved,Esport,🌍,"Worlds LOL 2026 – Swiss Sta
 Dates : 28-31 octobre 2026
 Lieu : Credit Union of Texas Event Center, Allen (Texas)
 Suite de la Swiss Stage – 8 équipes se qualifieront pour le Knockout Stage",,,
+hockey-che-d1-2026-j05-neuilly-sur-marne,approved,Hockey,🏒🐘,J5 · Chambéry 5-2 Neuilly-sur-Marne,2026-10-28 19:30,2026-10-28 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 5/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Neuilly-sur-Marne
+
+✅ Résultat : Chambéry 5–2 Neuilly-sur-Marne (victoire)",,,
 fb28c6be014ce5667635ffc5272d61d9@bdl-2026-2027,approved,Hockey,🏠🏒,J14 · Grenoble 🆚 Bordeaux,2026-10-30 20:15,2026-10-30 22:45,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 14/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h15 (heure de Paris)
@@ -5001,15 +4997,6 @@ Lieu : Credit Union of Texas Event Center, Allen (Texas)
 8 équipes qualifiées – élimination directe BO5 Fearless Draft
 Aucune double élimination en Knockout Stage (confirmé par Riot)",,,
 6BC0B797B4AF4DD2493548ACBBF203CB7D783C3D_0,approved,Concert,🎤,NOAPOLOGY - ODC - FEAT THE SUN,2026-11-03 19:00,2026-11-03 21:00,Europe/Paris,"AUSTRA ROCKS , 38400 ST MARTIN D HERES",https://rpo-billetterie.tickandlive.com/evenement/noapology-odc-feat-the-sun,Plus d'informations : https://rpo-billetterie.tickandlive.com/evenement/noapology-odc-feat-the-sun,,,
-nations-champ-2026-r4-fra-fij@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J4 : France 🇫🇷 vs Fidji 🇫🇯,2026-11-06 21:00,2026-11-06 23:00,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 4 (phase hémisphère Nord)
-
-🇫🇷 France vs 🇫🇯 Fidji
-📍 Stade de France, Saint-Denis (lieu à confirmer)
-🕘 21h00 heure de Paris (CET)
-
-📺 Diffusion : TF1
-Source : equipe-france.fr / rezosport.com
-Tags : France, Nations Championship, Rugby",,,
 worlds2026-semifinals@worlds2026,approved,Esport,⚔️,"Worlds LOL 2026 – Demi-finales (7-8 nov.) | Allen, Texas",2026-11-07,2026-11-08,Europe/Paris,Credit Union of Texas Event Center,,"Worlds 2026 – Demi-finales
 Dates : 7-8 novembre 2026
 Lieu : Credit Union of Texas Event Center, Allen (Texas)
@@ -5020,6 +5007,22 @@ wec2026-bahrein@endurance,approved,Mécanique,🏎️,WEC – 8h de Bahreïn (Au
 Circuit International de Bahreïn, Sakhir
 Couronnement des champions WEC 2026",,,
 10-dubinc-summum@festivals2026,approved,Concert,🎤,Dub Inc - Tournée (reggae) - Le Summum,2026-11-07 20:00,2026-11-07 23:00,Europe/Paris,Le Summum,,"Collectif stéphanois mené par Bouchkour et Komlan, référence du reggae made in France",,,
+hockey-che-d1-2026-j07-tours,approved,Hockey,🏒🐘,J7 · Chambéry 6-1 Tours,2026-11-07 20:00,2026-11-07 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 7/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Tours
+
+✅ Résultat : Chambéry 6–1 Tours (victoire)",,,
+nations-champ-2026-r4-fra-fij@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J4 : France 🇫🇷 vs Fidji 🇫🇯,2026-11-07 21:10,2026-11-07 23:10,Europe/Paris,"Groupama Stadium, Décines-Charpieu (Lyon)",,"Nations Championship 2026 — Journée 4 (phase hémisphère Nord)
+
+🇫🇷 France vs 🇫🇯 Fidji
+📍 Groupama Stadium, Décines-Charpieu (Lyon)
+🕘 21h10 heure de Paris (CET)
+
+✅ Résultat : France 54 – 17 Fidji
+📺 Diffusion : TF1
+Tags : France, Nations Championship, Rugby",,,
+foot-fra-nl-20261112,approved,Football,⚽,🇮🇹 Italie vs 🇫🇷 France – Ligue des nations (J5),2026-11-12 20:45,2026-11-12 22:45,Europe/Paris,"Stade Giuseppe-Meazza (San Siro), Milan",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
 e80760433570ae31323e539b937e4ab3@bdl-2026-2027,approved,Hockey,✈️🏒,J15 · Marseille 🆚 Grenoble,2026-11-13 20:15,2026-11-13 22:45,Europe/Paris,"Patinoire du POMGE, Marseille, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 15/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h15 (heure de Paris)
@@ -5034,14 +5037,15 @@ e80760433570ae31323e539b937e4ab3@bdl-2026-2027,approved,Hockey,✈️🏒,J15 ·
 
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !",,,
-nations-champ-2026-r5-fra-rsa@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J5 : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-13 21:00,2026-11-13 23:00,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 5 (phase hémisphère Nord)
+nations-champ-2026-r5-fra-rsa@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J5 : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-13 21:10,2026-11-13 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 5 (phase hémisphère Nord)
 
 🇫🇷 France vs 🇿🇦 Afrique du Sud (Springboks)
 📍 Stade de France, Saint-Denis
-🕘 21h00 heure de Paris (CET)
+🕘 21h10 heure de Paris (CET)
 
-Source : equipe-france.fr / mycomm.fr
-Tags : France",,,
+Tags : France
+
+✅ Résultat : France 21 – 19 Afrique du Sud",,,
 worlds2026-grandfinal@worlds2026,approved,Esport,🏆,"Worlds LOL 2026 – GRANDE FINALE 🥇 | Brooklyn, New York",2026-11-14 19:00,2026-11-15 00:00,Europe/Paris,Barclays Center,,"Worlds 2026 – Grand Final
 Date : 14 novembre 2026
 Lieu : Barclays Center, Brooklyn, New York City
@@ -5050,8 +5054,21 @@ BO5 Fearless Draft
 Couronnement du Champion du Monde League of Legends 2026 🏆
 Price pool estimé : +5 000 000 $
 Heure française : 19h environ (UTC-5 = -6h vs France en novembre)",,,
+hockey-che-d1-2026-j09-valenciennes,approved,Hockey,🏒🐘,J9 · Valenciennes 5-2 Chambéry,2026-11-14 20:00,2026-11-14 22:30,Europe/Paris,Valenciennes,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 9/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Valenciennes
+
+✅ Résultat : Chambéry 2–5 Valenciennes (défaite)",,,
 concert-deep-purple-jayler-20261115,approved,Concert,🎸,Deep Purple + JAYLER,2026-11-15,2026-11-15,Europe/Paris,"LDLC Arena, Décines (Lyon)",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 beastinblack-transbordeur@all,approved,Concert,🎤,Beast In Black + Frozen Crown + Sonata Arctica (heavy/power metal) - Le Transbordeur,2026-11-15 18:00,2026-11-15 23:00,Europe/Paris,Le Transbordeur,,Plateau heavy/power metal finlandais et italien.,,,
+foot-fra-nl-20261115,approved,Football,⚽,🇫🇷 France vs 🇹🇷 Turquie – Ligue des nations (J6),2026-11-15 20:45,2026-11-15 22:45,Europe/Paris,"Stade Atlantique, Bordeaux",https://www.flashscore.fr/actualites/ligue-des-nations-2026-27-calendrier-et-programme-de-l-equipe-de-france/OWWK0TiU/,Groupe A1 de la Ligue A. Coup d'envoi 20h45 (heure de Paris).,,,
+hockey-che-d1-2026-j08-valence,approved,Hockey,🏒🐘,J8 · Chambéry 5-3 Valence,2026-11-18 19:30,2026-11-18 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 8/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Valence
+
+✅ Résultat : Chambéry 5–3 Valence (victoire)",,,
 concert-sniper-20261119,approved,Concert,🎤,Sniper,2026-11-19 20:00,,Europe/Paris,"La Belle Électrique, 12 Esplanade Andry Farcy, Grenoble",https://www.la-belle-electrique.com/en/events/sniper-2026,"Rap. Big Hall. Doors/start 20:00, tickets €29–34. One listing marks it as sold out (complet).",,,
 f03ee67bcdfbd483f6c3b693bc0754f6@bdl-2026-2027,approved,Hockey,🏠🏒,J16 · Grenoble 🆚 Briançon,2026-11-20 20:00,2026-11-20 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 16/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
@@ -5073,16 +5090,21 @@ concert-zebrahead-punk-rock-factory-20261121,approved,Concert,🎸,Zebrahead + P
 wtt-mondiaux-jeunes-2026@wtt,approved,Tennis de table,🌍,Championnats du Monde Jeunes 2026 — Manama,2026-11-21,2026-11-28,Europe/Paris,Manama,,"Compétition : ITTF Championnats du Monde Jeunes
 Lieu : Manama, Bahreïn
 Organisateur : ITTF",,,
-nations-champ-2026-r6-fra-arg@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J6 : France 🇫🇷 vs Argentine 🇦🇷,2026-11-21 21:00,2026-11-21 23:00,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 6 (phase hémisphère Nord)
+hockey-che-d1-2026-j10-strasbourg,approved,Hockey,🏒🐘,J10 · Chambéry 5-1 Strasbourg,2026-11-21 20:00,2026-11-21 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 10/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Strasbourg
+
+✅ Résultat : Chambéry 5–1 Strasbourg (victoire)",,,
+nations-champ-2026-r6-fra-arg@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J6 : France 🇫🇷 vs Argentine 🇦🇷,2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 6 (phase hémisphère Nord)
 
 🇫🇷 France vs 🇦🇷 Argentine (Pumas)
 📍 Stade de France, Saint-Denis
-🕘 21h00 heure de Paris (CET)
+🕘 21h10 heure de Paris (CET)
 
-Source : equipe-france.fr / mycomm.fr
-Tags : France, Nations Championship, Rugby",,,
-rugby-fra-arg-20261121,approved,Rugby,🏉,France 🇫🇷 – Argentine 🇦🇷 (Nations Championship),2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,"Stade de France, Saint-Denis",https://www.stadefrance.com/en/groups/ticket/france-argentina-2026,"Last France match of the autumn series. Finals Weekend in London Nov 27-29: France's slot not known yet.
-Possible doublon : un événement similaire existe déjà (source : équipe-france.fr / mycomm.fr). À garder un seul des deux.",,,
+Tags : France, Nations Championship, Rugby
+
+✅ Résultat : France 45 – 17 Argentine",,,
 af5e77f068dd5157c134796219cc4084@bdl-2026-2027,approved,Hockey,✈️🏒,J17 · Cergy-Pontoise 🆚 Grenoble,2026-11-22 15:00,2026-11-22 17:30,Europe/Paris,"Aren'Ice, Cergy-Pontoise, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 17/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 15h00 (heure de Paris)
@@ -5099,22 +5121,11 @@ af5e77f068dd5157c134796219cc4084@bdl-2026-2027,approved,Hockey,✈️🏒,J17 ·
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 concert-accept-dynazty-tailgunner-20261125,approved,Concert,🤘,Accept + Dynazty + Tailgunner,2026-11-25,2026-11-25,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
+hockey-bdl-cdf-2026-r8-valenciennes,approved,Hockey,🏒🏆,Coupe de France (8es) · Valenciennes 1-2 Grenoble,2026-11-25 19:00,2026-11-25 21:30,Europe/Paris,"Patinoire Valigloo, Valenciennes",https://guide-ski.fr/coupe-france-hockey-huitiemes-2026/,"🏆 Coupe de France 2026-27 — huitième de finale
+🆚 Valenciennes (D1) – Grenoble Brûleurs de Loups
+✅ Résultat : Valenciennes 1–2 Grenoble — Grenoble qualifié pour les quarts de finale.",,,
 hellfest-lineup-reveal-20261126,approved,Festival,🤘,Hellfest 2027 – Annonce du line-up complet + annonce spéciale,2026-11-26 18:30,2026-11-26 20:00,Europe/Paris,En ligne : YouTube + Twitch (@hellfestopenair) · Watch party à Lyon : Rock'n Eat,https://www.hellfest.fr,"Live spécial à 18h30, révélation à 19h00 (heure de Paris). Hellfest « The Absolute Edition », 17-20 juin 2027, Clisson. Heure de fin estimée.",,,
-handball-f-ger-fra-20261126,approved,Sport,🤾,"Allemagne – France 🇫🇷 (amical, Bleues)",2026-11-26 19:30,2026-11-26 21:30,Europe/Paris,"Porsche-Arena, Stuttgart",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,Pre-Euro friendly. Source: FFHandball schedule.,,,
-nations-champ-2026-finals@rugby,approved,Rugby,🏉,XV de France — Nations Champ. Finals Weekend 🇬🇧 Twickenham (⚠️ TBC),2026-11-27,2026-11-29,Europe/Paris,Twickenham Stadium,,"Nations Championship 2026 — Finals Weekend
-
-📍 Twickenham Stadium, Londres, Angleterre
-🗓 27-29 novembre 2026
-
-6 matchs de classement (du match pour la 6e place jusqu'à la grande FINALE).
-La France jouera selon son classement dans la conférence Nord.
-⚠️ Jour et heure exacts à confirmer selon classement final.
-
-Finales programmées :
-• Ven 27 nov : 6e Nord vs 6e Sud / 3e Nord vs 4e Sud
-• Sam 28 nov : 5e Nord vs 5e Sud / 3e Nord vs 3e Sud
-• Dim 29 nov : 2e Nord vs 2e Sud / 🏆 GRANDE FINALE : 1er Nord vs 1er Sud
-Tags : Finale, France, Nations Championship, Rugby",,,
+handball-f-ger-fra-20261126,approved,Sport,🤾,"Allemagne – France 🇫🇷 (amical, Bleues)",2026-11-26 19:30,2026-11-26 21:30,Europe/Paris,"Porsche-Arena, Stuttgart",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,Pre-Euro friendly.,,,
 d65cfb1b65f7304c5ce5b2ee85fda643@bdl-2026-2027,approved,Hockey,🏠🏒,J18 · Grenoble 🆚 Anglet,2026-11-27 20:00,2026-11-27 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 18/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5131,13 +5142,19 @@ d65cfb1b65f7304c5ce5b2ee85fda643@bdl-2026-2027,approved,Hockey,🏠🏒,J18 · G
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
-handball-f-ger-fra-20261128,approved,Sport,🤾,"Allemagne – France 🇫🇷 (amical, Bleues)",2026-11-28 15:30,2026-11-28 17:30,Europe/Paris,"ratiopharm arena, Neu-Ulm",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,Pre-Euro friendly. Source: FFHandball schedule.,,,
+handball-f-ger-fra-20261128,approved,Sport,🤾,"Allemagne – France 🇫🇷 (amical, Bleues)",2026-11-28 15:30,2026-11-28 17:30,Europe/Paris,"ratiopharm arena, Neu-Ulm",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,Pre-Euro friendly.,,,
 91A3C4F8-9F4F-4BEF-AF32-015B415CEEB6,approved,Concert,🎤,Fatal Picard,2026-11-28 20:00,2026-11-28 22:00,Europe/Paris,"Le Grand Angle
 2 Rue du Moulinet, 38500 Voiron, France",,"Soirée instrumental, reggae/dub/électro festif.
 Adresse : 2 Rue du Moulinet, 38500 Voiron, France · Lieu : Le Grand Angle · GPS : 45.364623,5.589794",,,"45.364623,5.589794"
+hockey-che-d1-2026-j11-cholet,approved,Hockey,🏒🐘,J11 · Cholet 🆚 Chambéry,2026-11-28 20:00,2026-11-28 22:30,Europe/Paris,Cholet,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 11/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Cholet",,,
 wtt-mixed-team-world-cup-2026@wtt,approved,Tennis de table,🌍,ITTF Mixed Team World Cup 2026 — Chengdu,2026-11-29,2026-12-06,Europe/Paris,Chengdu,,"Compétition : ITTF Mixed Team World Cup
 Lieu : Chengdu, Chine
 Note : Prélude aux WTT Finals. Réunit les meilleures équipes mixtes du monde.",,,
+nations-champ-2026-final-fra-rsa@rugby,approved,Rugby,🏉🏆,Finale Nations Championship : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-29 17:40,2026-11-29 19:40,Europe/Paris,"Allianz Stadium (Twickenham), Londres",https://www.skysports.com/rugby-union/news/13615041/nations-championship-fixtures-france-to-play-south-africa-in-final-as-england-face-new-zealand-rematch-plus-ireland-vs-australia,"Finale du Nations Championship 2026 (1er Nord vs 1er Sud), Finals Weekend à Twickenham.
+Coup d'envoi 16h40 GMT = 17h40 heure de Paris.",,,
 089fb8b616d366dfe5380de732b9cb05@bdl-2026-2027,approved,Hockey,✈️🏒,J19 · Amiens 🆚 Grenoble,2026-11-29 18:00,2026-11-29 20:30,Europe/Paris,"Coliséum, Amiens, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 19/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 18h00 (heure de Paris)
@@ -5169,6 +5186,10 @@ Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j12-morzine,approved,Hockey,🏒🐘,J12 · Chambéry 🆚 Morzine,2026-12-02 19:30,2026-12-02 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 12/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Morzine",,,
 concert-eluveitie-pain-20261203,approved,Concert,🤘,Eluveitie + PAIN,2026-12-03,2026-12-03,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Folk metal. Time not published in my source: all-day placeholder, check the ticket.
 Possible doublon : un événement similaire existe déjà (source : 🎤 Concerts / Festivals). À garder un seul des deux.",,,
 eluveitie-transbordeur@all,approved,Concert,🎤,Eluveitie + Pain + Wolfheart (folk/indus/atmospheric metal) - Le Transbordeur,2026-12-03 19:00,2026-12-03 23:00,Europe/Paris,Le Transbordeur,,"Folk celtique, indus et metal atmosphérique.",,,
@@ -5204,8 +5225,11 @@ Entraîneur : Pauline Bourdon Sansus
 
 Enjeu : Qualification Coupe du Monde 2027 + JO 2028
 📺 Diffusion : La Chaîne L'Équipe + partenaires
-Source : equipe-france.fr / wikipedia
 Tags : Euro Handball, Femmes, France, Handball",,,
+hockey-che-d1-2026-j13-meudon,approved,Hockey,🏒🐘,J13 · Meudon 🆚 Chambéry,2026-12-05 20:00,2026-12-05 22:30,Europe/Paris,Meudon,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 13/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Meudon",,,
 concert-papa-roach-20261206,approved,Concert,🤘,Papa Roach,2026-12-06,2026-12-06,Europe/Paris,"LDLC Arena, Décines (Lyon)",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 handball-f-euro-fra-fro-20261207,approved,Sport,🤾,France 🇫🇷 – Îles Féroé 🇫🇴 (Euro handball féminin),2026-12-07 20:30,2026-12-07 22:30,Europe/Paris,"Spodek, Katowice",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,Group E.,,,
 wtt-finals-2026@wtt,approved,Tennis de table,🏆,WTT Finals 2026 — Hong Kong (Finale de saison),2026-12-08,2026-12-13,Europe/Paris,Hong Kong,,"Compétition : WTT Finals — Finale de saison
@@ -5216,6 +5240,12 @@ Note : Point culminant de la saison WTT 2026. Uniquement simple et double mixte.
 handball-f-euro-ukr-fra-20261209,approved,Sport,🤾,Ukraine 🇺🇦 – France 🇫🇷 (Euro handball féminin),2026-12-09 20:30,2026-12-09 22:30,Europe/Paris,"Spodek, Katowice",https://www.actu-alt-plus.com/le-cri-joyeux/euro-handball-feminin-2026-dates-liste-bleues/41700/,"Group E. Main round Dec 11-16, semis Dec 18, final Dec 20 if France qualify: add once known.",,,
 biathlon-wc-grand-bornand-20261210,approved,Sport,🎿,Coupe du monde de biathlon – Le Grand-Bornand,2026-12-10,2026-12-13,Europe/Paris,Le Grand-Bornand (Haute-Savoie),https://hautesavoiemontblanc-tourisme.com/a-la-une/coupe-du-monde-de-biathlon/,"6 races: sprints Dec 10-11, pursuits Dec 12, mass starts Dec 13. French stage of the World Cup. Free-to-air on La Chaîne L'Équipe.",,,
 ensemble-summum@all,approved,Concert,🎤,Ensemble!!! Mike & Riké (Sinsémilia) + Guizmo & Manu (Tryo) + HK + Vanupié - Le Summum,2026-12-11 20:00,2026-12-11 23:00,Europe/Paris,Le Summum,,Plateau reggae/chanson engagée française.,,,
+athle-euro-cross-belgrade-20261213,approved,Athlétisme,🏃,Championnats d'Europe de cross-country – Belgrade,2026-12-13,,Europe/Paris,"Belgrade, Serbie",https://www.runblogrun.com/2026/11/the-spar-2026-european-athletics-cross-country-championships-are-december-13-2026.html,Dimanche 13 décembre 2026. Horaires des courses non publiés : événement en journée entière (à remplacer par les horaires officiels). Diffusion gratuite en streaming.,,,
+hockey-bdl-cdf-2026-qf,pending,Hockey,🏒🏆,Coupe de France (quart de finale) · Grenoble – adversaire à confirmer,2026-12-15,2026-12-16,Europe/Paris,À confirmer,https://www.hockeyfrance.com/competitions/coupe-de-france/coupe-de-france-masculine/calendrier-et-resultats/,"Quarts de finale les 15–16 décembre 2026. Tirage, date, horaire et lieu non publiés. Demi-finales le 5 janvier 2027, finale le dimanche 24 janvier 2027 (si qualification).",,,
+hockey-che-d1-2026-j14-villard-de-lans,approved,Hockey,🏒🐘,J14 · Chambéry 🆚 Villard-de-Lans,2026-12-16 19:30,2026-12-16 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 14/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Villard-de-Lans",,,
 56648a7203f661bc8f8e4adda904798a@bdl-2026-2027,approved,Hockey,✈️🏒,J22 · Angers 🆚 Grenoble,2026-12-18 20:00,2026-12-18 22:30,Europe/Paris,"Angers IceParc, Angers, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 22/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5236,6 +5266,10 @@ Possible doublon : un événement similaire existe déjà (source : 🎤 Concert
 ultravomit-phare@all,approved,Concert,🎤,Ultra Vomit & Tagada Jones (metal parodique/punk) - Le Phare,2026-12-18 20:00,2026-12-18 23:00,Europe/Paris,Le Phare,,"Tournée ""Les Zéniths de la Puissance"".",,,
 athle-fra-running-5km-20261219,approved,Athlétisme,🏃,Championnats de France – 5 km,2026-12-19,2026-12-19,Europe/Paris,Paris (Île-de-France),https://www.athle.fr,"Championnats de France de running, saison 2026/2027. Horaires non communiqués : placé sur la journée.",,,
 concert-l-entourloop-20261219,approved,Concert,🌴,L'Entourloop,2026-12-19,2026-12-19,Europe/Paris,"La Rayonne, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Hip-hop / reggae / dub. Time not published in my source: all-day placeholder, check the ticket.",,,
+hockey-che-d1-2026-j15-nantes,approved,Hockey,🏒🐘,J15 · Nantes 🆚 Chambéry,2026-12-19 20:00,2026-12-19 22:30,Europe/Paris,Nantes,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 15/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Nantes",,,
 ac082c996a1358ce04215daf0d8b6863@bdl-2026-2027,approved,Hockey,🏠🏒,J23 · Grenoble 🆚 Amiens,2026-12-20 18:00,2026-12-20 20:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 23/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 18h00 (heure de Paris)
@@ -5267,6 +5301,10 @@ f7d871f9bb0223fc0300e87bdcdc8ec4@bdl-2026-2027,approved,Hockey,✈️🏒,J24 ·
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j16-nantes,approved,Hockey,🏒🐘,J16 · Chambéry 🆚 Nantes,2026-12-23 19:30,2026-12-23 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 16/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Nantes",,,
 937384940ff6ff524eea161cdcaa7d62@bdl-2026-2027,approved,Hockey,🏠🏒,J25 · Grenoble 🆚 Cergy-Pontoise,2026-12-28 20:00,2026-12-28 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 25/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5330,6 +5368,10 @@ concert-acid-arab-20270107,approved,Concert,🎧,Acid Arab,2027-01-07,2027-01-07
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j17-villard-de-lans,approved,Hockey,🏒🐘,J17 · Villard-de-Lans 🆚 Chambéry,2027-01-09 20:00,2027-01-09 22:30,Europe/Paris,Villard-de-Lans,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 17/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Villard-de-Lans",,,
 afa6948a36b2959de0874b154cdad7a8@bdl-2026-2027,approved,Hockey,✈️🏒,J29 · Nice 🆚 Grenoble,2027-01-10 17:30,2027-01-10 20:00,Europe/Paris,"Patinoire Jean Bouin, Nice, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 29/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 17h30 (heure de Paris)
@@ -5362,6 +5404,10 @@ Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
 handball-wch-2027-group-d,approved,Sport,🤾,Mondial de handball masculin 2027 – groupe D de la France 🇫🇷,2027-01-13,2027-01-31,Europe/Paris,"Allemagne (groupe D: Porsche-Arena, Stuttgart)",https://info.fr/mondial-handball-2027-tf1-bein-sports-diffuseront-les-bleus/,"Tournament window Jan 13-31. France in Group D with Argentina, Brazil, Kuwait. Individual match dates not found: replace with match rows when published.",,,
+hockey-che-d1-2026-j18-meudon,approved,Hockey,🏒🐘,J18 · Chambéry 🆚 Meudon,2027-01-13 19:30,2027-01-13 22:00,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 18/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Meudon",,,
 2bc0060dc0d797685c02e1de4d3864af@bdl-2026-2027,approved,Hockey,✈️🏒,J31 · Bordeaux 🆚 Grenoble,2027-01-15 20:00,2027-01-15 22:30,Europe/Paris,"Patinoire de Mériadeck, Bordeaux, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 31/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5379,8 +5425,18 @@ handball-wch-2027-group-d,approved,Sport,🤾,Mondial de handball masculin 2027 
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 concert-comeback-kid-20270116,approved,Concert,🤘,"Comeback Kid + Haywire, Whispers (TH), Speedway",2027-01-16,2027-01-16,Europe/Paris,"La Rayonne, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Hardcore. Time not published in my source: all-day placeholder, check the ticket.",,,
 concert-muse-1-20270116,approved,Concert,🎸,Muse – Lyon (soir 1),2027-01-16,2027-01-16,Europe/Paris,"LDLC Arena, Décines (Lyon)",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
+hockey-che-d1-2026-j19-morzine,approved,Hockey,🏒🐘,J19 · Morzine 🆚 Chambéry,2027-01-16 20:00,2027-01-16 22:30,Europe/Paris,Morzine,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 19/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Morzine",,,
 concert-muse-2-20270117,approved,Concert,🎸,Muse – Lyon (soir 2),2027-01-17,2027-01-17,Europe/Paris,"LDLC Arena, Décines (Lyon)",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 tennis-ao-2027,approved,Sport,🎾,Open d'Australie 2027,2027-01-17,2027-01-31,Australia/Melbourne,"Melbourne Park, Melbourne",https://toomanyrackets.com/australian-open-guide/,"Grand Slam, French players in the draw.",,,
+hockey-che-d1-2026-j06-mont-blanc,approved,Hockey,🏒🐘,J6 · Mont-Blanc 🆚 Chambéry,2027-01-19 19:30,2027-01-19 22:00,Europe/Paris,Mont-Blanc (Haute-Savoie),https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 6/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Mont-Blanc
+
+⚠️ Match reporté au 19 janvier 2027 (initialement 31 oct.).",,,
 7793e0d37acb269bb575c44117cdad7e@bdl-2026-2027,approved,Hockey,🏠🏒,J32 · Grenoble 🆚 Anglet,2027-01-19 20:00,2027-01-19 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 32/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5412,6 +5468,14 @@ Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j20-cholet,approved,Hockey,🏒🐘,J20 · Chambéry 🆚 Cholet,2027-01-23 20:00,2027-01-23 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 20/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Cholet",,,
+hockey-che-d1-2026-j21-strasbourg,approved,Hockey,🏒🐘,J21 · Strasbourg 🆚 Chambéry,2027-01-26 19:30,2027-01-26 22:00,Europe/Paris,Strasbourg,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 21/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Strasbourg",,,
 a22d427809ca3f4772b14408f436dee5@bdl-2026-2027,approved,Hockey,🏠🏒,J34 · Grenoble 🆚 Briançon,2027-01-26 20:00,2027-01-26 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 34/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5444,6 +5508,10 @@ Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 ski-wc-chamonix-20270130,approved,Sport,🎿,Coupe du monde de ski alpin – Chamonix (slalom hommes),2027-01-30,2027-01-30,Europe/Paris,Chamonix,https://guide-ski.fr/?p=8848,,,,
+hockey-che-d1-2026-j22-valenciennes,approved,Hockey,🏒🐘,J22 · Chambéry 🆚 Valenciennes,2027-01-30 20:00,2027-01-30 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 22/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Valenciennes",,,
 1841de612a974e5c34a4affaa5a83eff@bdl-2026-2027,approved,Hockey,🏠🏒,J36 · Grenoble 🆚 Bordeaux,2027-01-31 18:00,2027-01-31 20:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 36/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 18h00 (heure de Paris)
@@ -5461,6 +5529,10 @@ ski-wc-chamonix-20270130,approved,Sport,🎿,Coupe du monde de ski alpin – Cha
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
 ski-worlds-2027,approved,Sport,🎿,Championnats du monde de ski alpin 2027,2027-02-01,2027-02-14,Europe/Zurich,Crans-Montana (Suisse),https://dicodusport.fr/blog/?p=706293,,,,
+hockey-che-d1-2026-j23-valence,approved,Hockey,🏒🐘,J23 · Valence 🆚 Chambéry,2027-02-02 19:30,2027-02-02 22:00,Europe/Paris,Valence,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 23/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Valence",,,
 95e5785ee05a2b11822cb6b07d357c7d@bdl-2026-2027,approved,Hockey,✈️🏒,J37 · Chamonix 🆚 Grenoble,2027-02-02 20:30,2027-02-02 23:00,Europe/Paris,"Patinoire Richard Bozon, Chamonix, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 37/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h30 (heure de Paris)
@@ -5492,11 +5564,19 @@ Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
-rugby-6n-fra-wal-20270206,approved,Rugby,🏉,France 🇫🇷 – Pays de Galles (Six Nations),2027-02-06 17:40,2027-02-06 19:40,Europe/Paris,"Stade de France, Saint-Denis",https://abargenteuil.fr/blog/tournoi-6-nations-b-rugby/,Paris time. Opening match for France.,,,
+rugby-6n-fra-wal-20270206,approved,Rugby,🏉,France 🇫🇷 – Pays de Galles (Six Nations),2027-02-06 17:40,2027-02-06 19:40,Europe/Paris,"Stade de France, Saint-Denis",https://www.irishrugby.ie/2026/03/09/guinness-mens-six-nations-fixtures-confirmed-for-2027,Heure de Paris (16h40 GMT). Match d'ouverture de la France.,,,
+hockey-che-d1-2026-j24-tours,approved,Hockey,🏒🐘,J24 · Tours 🆚 Chambéry,2027-02-06 20:00,2027-02-06 22:30,Europe/Paris,Tours,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 24/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Tours",,,
 biathlon-worlds-otepaa-2027,approved,Sport,🎿,Championnats du monde de biathlon 2027,2027-02-10,2027-02-21,Europe/Tallinn,Otepää (Estonie),https://guide-ski.fr/?p=9128,,,,
 concert-ugly-kid-joe-20270212,approved,Concert,🎸,Ugly Kid Joe,2027-02-12,2027-02-12,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
+hockey-che-d1-2026-j25-mont-blanc,approved,Hockey,🏒🐘,J25 · Chambéry 🆚 Mont-Blanc,2027-02-13 20:00,2027-02-13 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 25/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Mont-Blanc",,,
 concert-thiefaine-grenoble-20270214,approved,Concert,🎸,Hubert-Félix Thiéfaine – Grenoble,2027-02-14,2027-02-14,Europe/Paris,"Summum, Grenoble",https://festivaly.eu/es/conciertos/grenoble,"Time not published in my source: all-day placeholder, check the ticket.",,,
-rugby-6n-eng-fra-20270214,approved,Rugby,🏉,"Angleterre – France 🇫🇷 (Six Nations, le Crunch)",2027-02-14 15:10,2027-02-14 17:10,Europe/Paris,"Twickenham, Londres",https://www.redbull.com/fr-fr/tournoi-six-nations-calendrier,Paris time.,,,
+rugby-6n-eng-fra-20270214,approved,Rugby,🏉,"Angleterre – France 🇫🇷 (Six Nations, le Crunch)",2027-02-14 16:10,2027-02-14 18:10,Europe/Paris,"Allianz Stadium (Twickenham), Londres",https://www.irishrugby.ie/2026/03/09/guinness-mens-six-nations-fixtures-confirmed-for-2027,Heure de Paris (coup d'envoi officiel 15h10 GMT).,,,
 2207b07cd3ed9910f99a74b670eeadcb@bdl-2026-2027,approved,Hockey,✈️🏒,J39 · Angers 🆚 Grenoble,2027-02-16 20:30,2027-02-16 23:00,Europe/Paris,"Angers IceParc, Angers, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 39/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h30 (heure de Paris)
@@ -5512,6 +5592,10 @@ rugby-6n-eng-fra-20270214,approved,Rugby,🏉,"Angleterre – France 🇫🇷 (S
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j26-neuilly-sur-marne,approved,Hockey,🏒🐘,J26 · Neuilly-sur-Marne 🆚 Chambéry,2027-02-17 19:30,2027-02-17 22:00,Europe/Paris,Neuilly-sur-Marne,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 26/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Neuilly-sur-Marne",,,
 concert-sleeping-with-sirens-20270218,approved,Concert,🎸,Sleeping With Sirens,2027-02-18,2027-02-18,Europe/Paris,"La Rayonne, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 cb9f4dbff910ca95dd9525a39b9a0d75@bdl-2026-2027,approved,Hockey,🏠🏒,J40 · Grenoble 🆚 Rouen,2027-02-19 20:00,2027-02-19 22:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 40/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
@@ -5529,7 +5613,11 @@ cb9f4dbff910ca95dd9525a39b9a0d75@bdl-2026-2027,approved,Hockey,🏠🏒,J40 · G
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
-rugby-6n-fra-sco-20270221,approved,Rugby,🏉,France 🇫🇷 – Écosse (Six Nations),2027-02-21 15:10,2027-02-21 17:10,Europe/Paris,"Stade de France, Saint-Denis",https://www.redbull.com/fr-fr/tournoi-six-nations-calendrier,Paris time.,,,
+hockey-che-d1-2026-j27-epinal,approved,Hockey,🏒🐘,J27 · Chambéry 🆚 Épinal,2027-02-20 20:00,2027-02-20 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 27/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Épinal",,,
+rugby-6n-fra-sco-20270221,approved,Rugby,🏉,France 🇫🇷 – Écosse (Six Nations),2027-02-21 16:10,2027-02-21 18:10,Europe/Paris,"Stade de France, Saint-Denis",https://www.irishrugby.ie/2026/03/09/guinness-mens-six-nations-fixtures-confirmed-for-2027,Heure de Paris (coup d'envoi officiel 15h10 GMT).,,,
 3753a401ea5f43135f934a9767c920b8@bdl-2026-2027,approved,Hockey,🏠🏒,J41 · Grenoble 🆚 Gap,2027-02-21 18:00,2027-02-21 20:30,Europe/Paris,"Patinoire Polesud, Grenoble, France",https://billetterie.bruleursdeloups.fr,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 41/44
 🏠 MATCH À DOMICILE — Allez la meute ! 🔥
 🕗 Coup d'envoi : 18h00 (heure de Paris)
@@ -5546,6 +5634,10 @@ rugby-6n-fra-sco-20270221,approved,Rugby,🏉,France 🇫🇷 – Écosse (Six N
 ℹ️ Horaires officiels : https://bruleursdeloups.fr/calendrier/
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Domicile, Hockey sur glace, Ligue Magnus",,,
+hockey-che-d1-2026-j28-dunkerque,approved,Hockey,🏒🐘,J28 · Dunkerque 🆚 Chambéry,2027-02-23 19:30,2027-02-23 22:00,Europe/Paris,Dunkerque,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 28/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 19h30 (heure de Paris, à confirmer)
+🆚 Adversaire : Dunkerque",,,
 9ad5af2d179f5da1f49f67469e2ae3e6@bdl-2026-2027,approved,Hockey,✈️🏒,J42 · Cergy-Pontoise 🆚 Grenoble,2027-02-24 20:30,2027-02-24 23:00,Europe/Paris,"Aren'Ice, Cergy-Pontoise, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 42/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h30 (heure de Paris)
@@ -5580,6 +5672,10 @@ Tags : Domicile, Hockey sur glace, Ligue Magnus
 Statut d'origine : provisoire",,,
 athle-fra-running-cross-20270227,approved,Athlétisme,🏃,Championnats de France – cross-country,2027-02-27,2027-02-28,Europe/Paris,Sarrebourg (Grand Est),https://www.athle.fr,"Championnats de France de running, saison 2026/2027. Horaires non communiqués : placé sur la journée.",,,
 CB74D956-0464-4116-B273-E220F8BDC4D0,approved,Esport,🕹️,Culture clash 4,2027-02-27 20:00,2027-02-27 21:00,Europe/Paris,,,,,,
+hockey-che-d1-2026-j29-lyon,approved,Hockey,🏒🐘,J29 · Chambéry 🆚 Lyon,2027-02-27 20:00,2027-02-27 22:30,Europe/Paris,"Patinoire de Buisson Rond, Chambéry",https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 29/30
+🏠 MATCH À DOMICILE — Allez les Éléphants ! 🐘
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Lyon",,,
 966df4caffdfbf35b7fe97244cb153f2@bdl-2026-2027,approved,Hockey,✈️🏒,J44 · Amiens 🆚 Grenoble,2027-03-02 20:00,2027-03-02 22:30,Europe/Paris,"Coliséum, Amiens, France",https://bruleursdeloups.fr/calendrier/,"🏒 Synerglace Ligue Magnus 2026-27 — Journée 44/44
 ✈️ MATCH À L'EXTÉRIEUR
 🕗 Coup d'envoi : 20h00 (heure de Paris)
@@ -5596,11 +5692,16 @@ CB74D956-0464-4116-B273-E220F8BDC4D0,approved,Esport,🕹️,Culture clash 4,202
 ⚠️ Les horaires et dates peuvent être modifiés (diffusion TV, report). Vérifier avant de partir !
 Tags : Extérieur, Hockey sur glace, Ligue Magnus",,,
 concert-uncle-acid-the-deadbeats-20270303,approved,Concert,🎸,Uncle Acid & the Deadbeats,2027-03-03,2027-03-03,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
-rugby-6n-ita-fra-20270306,approved,Rugby,🏉,Italie – France 🇫🇷 (Six Nations),2027-03-06 14:10,2027-03-06 16:10,Europe/Paris,Rome,https://www.redbull.com/fr-fr/tournoi-six-nations-calendrier,Paris time. Stadium not stated in my source.,,,
+rugby-6n-ita-fra-20270306,approved,Rugby,🏉,Italie – France 🇫🇷 (Six Nations),2027-03-06 15:10,2027-03-06 17:10,Europe/Paris,"Stadio Olimpico, Rome",https://www.irishrugby.ie/2026/03/09/guinness-mens-six-nations-fixtures-confirmed-for-2027,Heure de Paris (coup d'envoi officiel 14h10 GMT).,,,
+hockey-che-d1-2026-j30-caen,approved,Hockey,🏒🐘,J30 · Caen 🆚 Chambéry,2027-03-06 20:00,2027-03-06 22:30,Europe/Paris,Caen,https://www.hockeyarchives.info/France2027div1.htm,"🏒 Division 1 2026-27 — Journée 30/30
+✈️ MATCH À L’EXTÉRIEUR
+🕗 Coup d'envoi indicatif 20h00 (heure de Paris, à confirmer)
+🆚 Adversaire : Caen",,,
 concert-the-warning-20270312,approved,Concert,🎸,The Warning,2027-03-12,2027-03-12,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
-rugby-6n-irl-fra-20270313,approved,Rugby,🏉,"Irlande – France 🇫🇷 (Six Nations, Super Saturday)",2027-03-13 20:10,2027-03-13 22:10,Europe/Paris,"Aviva Stadium, Dublin",https://www.redbull.com/fr-fr/tournoi-six-nations-calendrier,Paris time.,,,
+rugby-6n-irl-fra-20270313,approved,Rugby,🏉,"Irlande – France 🇫🇷 (Six Nations, Super Saturday)",2027-03-13 21:10,2027-03-13 23:10,Europe/Paris,"Aviva Stadium, Dublin",https://www.irishrugby.ie/2026/03/09/guinness-mens-six-nations-fixtures-confirmed-for-2027,Heure de Paris (coup d'envoi officiel 20h10 GMT).,,,
 concert-michael-schenker-group-20270316,approved,Concert,🎸,Michael Schenker Group,2027-03-16,2027-03-16,Europe/Paris,"La Rayonne, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 concert-die-arzte-20270319,approved,Concert,🎸,Die Ärzte,2027-03-19,2027-03-19,Europe/Paris,"Transbordeur, Villeurbanne",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
+foot-fra-nl-qf-esp-2027,pending,Football,⚽,"🇪🇸 Espagne – 🇫🇷 France – Ligue des nations, quart de finale (dates à confirmer)",2027-03-25,2027-03-30,Europe/Paris,À confirmer,https://fr.uefa.com/uefanationsleague/news/02ab-220be387262e-39af2b27595f-1000--tirage-au-sort-des-quarts-de-finale-et-des-barrages-de-la-/,"Tirage du 20/11/2026 : France – Espagne. Fenêtre 25–30 mars 2027, dates, horaires et stades non publiés. Le vainqueur affronte le vainqueur de Pays-Bas/Portugal en demi-finale (phase finale 9–13 juin 2027). À passer en « approved » avec les horaires.",,,
 athle-fra-running-24h-20270327,approved,Athlétisme,🏃,Championnats de France – 24 heures,2027-03-27,2027-03-28,Europe/Paris,Roche-la-Molière (Auvergne-Rhône-Alpes),https://www.athle.fr,"Championnats de France de running, saison 2026/2027. Horaires non communiqués : placé sur la journée.",,,
 concert-rodrigo-gabriela-grenoble-20270404,approved,Concert,🎸,Rodrigo y Gabriela – Grenoble,2027-04-04,2027-04-04,Europe/Paris,"La Belle Électrique, Grenoble",https://festivaly.eu/koncerty/grenoble,"Also at Radiant-Bellevue (Lyon) on Apr 5. Time not published in my source: all-day placeholder, check the ticket.",,,
 concert-megadeth-black-label-society-testament-20270408,approved,Concert,🤘,Megadeth + Black Label Society + Testament,2027-04-08,2027-04-08,Europe/Paris,"Halle Tony Garnier, Lyon",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
@@ -5622,37 +5723,3 @@ concert-europe-20271008,approved,Concert,🎸,Europe,2027-10-08,2027-10-08,Europ
 concert-meshuggah-20271019,approved,Concert,🤘,Meshuggah,2027-10-19,2027-10-19,Europe/Paris,"Halle Tony Garnier, Lyon",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 concert-bruce-dickinson-20271207,approved,Concert,🤘,Bruce Dickinson,2027-12-07,2027-12-07,Europe/Paris,"Radiant-Bellevue, Caluire-et-Cuire",https://www.songkick.com/metro-areas/28889-france-lyon/genre/rock,"Time not published in my source: all-day placeholder, check the ticket.",,,
 A038E1D6-8B6E-431C-8CBD-F21E12AC2C79,approved,Sport,🏅,Départ Vendée Globe,2028-11-12,2028-11-12,Europe/Paris,,,,,,
-nations-champ-2026-r4-fra-fij@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J4 : France 🇫🇷 vs Fidji 🇫🇯,2026-11-07 21:10,2026-11-07 23:10,Europe/Paris,"Groupama Stadium, Décines-Charpieu (Lyon)",,"Nations Championship 2026 — Journée 4 (phase hémisphère Nord)
-
-🇫🇷 France vs 🇫🇯 Fidji
-📍 Groupama Stadium, Décines-Charpieu (Lyon)
-🕘 21h10 heure de Paris (CET)
-
-✅ Résultat : France 54 – 17 Fidji
-📺 Diffusion : TF1
-Source : equipe-france.fr / rezosport.com
-Tags : France, Nations Championship, Rugby",,,
-nations-champ-2026-r5-fra-rsa@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J5 : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-13 21:10,2026-11-13 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 5 (phase hémisphère Nord)
-
-🇫🇷 France vs 🇿🇦 Afrique du Sud (Springboks)
-📍 Stade de France, Saint-Denis
-🕘 21h10 heure de Paris (CET)
-
-Source : equipe-france.fr / mycomm.fr
-Tags : France
-
-✅ Résultat : France 21 – 19 Afrique du Sud",,,
-nations-champ-2026-r6-fra-arg@rugby,approved,Rugby,🏉,XV de France — Nations Champ. J6 : France 🇫🇷 vs Argentine 🇦🇷,2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,Stade de France,,"Nations Championship 2026 — Journée 6 (phase hémisphère Nord)
-
-🇫🇷 France vs 🇦🇷 Argentine (Pumas)
-📍 Stade de France, Saint-Denis
-🕘 21h10 heure de Paris (CET)
-
-Source : equipe-france.fr / mycomm.fr
-Tags : France, Nations Championship, Rugby
-
-✅ Résultat : France 45 – 17 Argentine",,,
-rugby-fra-arg-20261121,rejected,Rugby,🏉,France 🇫🇷 – Argentine 🇦🇷 (Nations Championship),2026-11-21 21:10,2026-11-21 23:10,Europe/Paris,"Stade de France, Saint-Denis",https://www.stadefrance.com/en/groups/ticket/france-argentina-2026,Doublon de nations-champ-2026-r6-fra-arg@rugby (gardé).,,,
-nations-champ-2026-finals@rugby,rejected,Rugby,🏉,XV de France — Nations Champ. Finals Weekend 🇬🇧 Twickenham (⚠️ TBC),2026-11-27,2026-11-29,Europe/Paris,Twickenham Stadium,,Remplacé par la ligne de la finale France – Afrique du Sud (nations-champ-2026-final-fra-rsa@rugby).,,,
-nations-champ-2026-final-fra-rsa@rugby,approved,Rugby,🏉,🏆 Finale Nations Championship : France 🇫🇷 vs Afrique du Sud 🇿🇦,2026-11-29 17:40,2026-11-29 19:40,Europe/Paris,"Allianz Stadium (Twickenham), Londres",https://www.skysports.com/rugby-union/news/13615041/nations-championship-fixtures-france-to-play-south-africa-in-final-as-england-face-new-zealand-rematch-plus-ireland-vs-australia,"Finale du Nations Championship 2026 (1er Nord vs 1er Sud), Finals Weekend à Twickenham.
-Coup d'envoi 16h40 GMT = 17h40 heure de Paris.",,,
